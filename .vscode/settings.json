@@ -6,5 +6,6 @@
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "Codegeex.CompletionDelay": 0.2
 }

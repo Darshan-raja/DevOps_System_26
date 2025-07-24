@@ -31,7 +31,11 @@ int getSum(int number 1, int number2);
 Definition
     int getSum(int number 1, int number2){
         int sum = number1 + number2;
-        return sum;
+        return sum;     
     }
     "{" and "}" is used to definition the function
 Call or invocation
+    int result = getSum(5, 10);
+    "result" is the variable that stores the return value of the function
+    "getSum(5, 10)" is the call of the function, passing the arguments 5 and 10 to the function
+    "int result" is the variable that stores the return value of the function 
