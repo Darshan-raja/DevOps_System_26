@@ -1,3 +1,4 @@
+In python without "main" function can run
 what is  function
 A function is a reusable block of code that performs a specific task. It allows you to encapsulate a set of instructions and execute them whenever needed. Functions can take input parameters, perform calculations or operations, and return a result. They help in organizing code, making it modular, and improving code readability and maintainability.
 main 3 parts of function
@@ -39,3 +40,4 @@ Call or invocation
     "result" is the variable that stores the return value of the function
     "getSum(5, 10)" is the call of the function, passing the arguments 5 and 10 to the function
     "int result" is the variable that stores the return value of the function 
+
