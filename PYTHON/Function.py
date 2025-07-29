@@ -22,7 +22,8 @@
 # def get_sum(**kwargs): #kwargs,*Number is a keyword argument
 #      return sum(kwargs.values())
 #           # Calling the function with multiple arguments
-# print("Sum from keyword args:", get_sum(a=5, b=5, c=20))
+# print("Sum from keyword args:", get_sum(a=5, b=5, c=20))git stash push --keep-index
+
 
 #E-Commerce example using Functions
 def E_commerce(cart_item, tax):
