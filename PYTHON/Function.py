@@ -1,9 +1,9 @@
 # Function example
 
-# Declaration and definition
-# def get_sum(number1, number2):
-#     """Returns the sum of two numbers."""
-#     return number1 + number2
+Declaration and definition
+def get_sum(number1, number2):     #declaration of the function
+    """Returns the sum of two numbers."""   #definition of the function
+    return number1 + number2  #returning the sum of the two numbers
 
 # # Calling the function
 # result = get_sum(456 ,56464)
@@ -34,4 +34,13 @@ def E_commerce(cart_item, tax):
 
 cart_items = [20, 30, 40,]
 print("Total amount after tax:", E_commerce(cart_items, 0.05))
+
+#without functions agruments
+
+
+def fn ():
+     #without argruments
+     return dg
+returned = fn()
+returned()
 
