@@ -1,3 +1,4 @@
+package JAVA;
 // public class Function {
 //       public static void main(String[] args){
 //             System.out.println("function executed successfully!");

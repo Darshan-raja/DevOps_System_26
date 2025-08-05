@@ -1,9 +1,9 @@
 # Function example
 
 Declaration and definition
-def get_sum(number1, number2):     #declaration of the function
-    """Returns the sum of two numbers."""   #definition of the function
-    return number1 + number2  #returning the sum of the two numbers
+# def get_sum(number1, number2):     #declaration of the function
+#     """Returns the sum of two numbers."""   #definition of the function
+#     return number1 + number2  #returning the sum of the two numbers
 
 # # Calling the function
 # result = get_sum(456 ,56464)
