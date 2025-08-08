@@ -11,6 +11,10 @@ for example, consider a student to mention the Obejct
 
 class student :
 Objects
-(varibale name or intance variable) student.new = new student()  ("NEW" is keyword" class name) 
+(varibale name or intance variable calling ) student.new = new student()  ("NEW" is keyword" class name student () is called Object ) 
 with help of new keyword we can create new object in RAM of class student
-        
+RAM segment Dynamic memory allcoation to the object
+- When you create an object, Python allocates memory for it in the heap segment of RAM.
+- This is called dynamic memory allocation.
+- Each object gets its own space in memory to store its attributes (data) and methods (functions).
+<Garbage collector> - Python automatically manages memory allocation and deallocation through a process called garbage collection.
