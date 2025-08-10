@@ -594,9 +594,10 @@
 # if __name__ == "__main__":
 #     main()
 
-class student {
-    public: string name;
-    public: int address;
-    public: int age;
+class darshan {
+    public: string name; /#(name,age,age, etc called as variable or attributes or properties )
+    public: address;
+    private : int age
+    
     
 }

@@ -10,10 +10,11 @@ for example, consider a student to mention the Obejct
 
 class student :
 Objects
-(varibale name or intance variable calling ) student.new = new student()  ("NEW" is keyword" class name student () is called Object ) 
-with help of new keyword we can create new object in RAM of class student
+(varibale name or intance variable calling ) student.new = new student()  (<NEW> is keyword" class name student () is called Object 
+with help of new keyword we can create new object in RAM of class student)
 RAM segment Dynamic memory allcoation to the object
 - When you create an object, Python allocates memory for it in the heap segment of RAM.
 - This is called dynamic memory allocation.
 - Each object gets its own space in memory to store its attributes (data) and methods (functions).
 <Garbage collector> - Python automatically manages memory allocation and deallocation through a process called garbage collection.
+<Constructor> - A constructor is a special method in a class that is automatically called when an object is created. it is used to initialize the object's attributes. Python constructors do not have a return type, not even None.      
