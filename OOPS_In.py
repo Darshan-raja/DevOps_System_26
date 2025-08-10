@@ -594,10 +594,9 @@
 # if __name__ == "__main__":
 #     main()
 
-class darshan {
-    public: string name; /#(name,age,age, etc called as variable or attributes or properties )
-    public: address;
-    private : int age
-    
-    
-}
+class darshan:
+    def __init__(self. my_Name, sefl .My_Age, self .my_Num):
+        self.my_Name = my_Name
+        self.my_Age = self.My_Age
+        self.my_Num = my_Num
+        
