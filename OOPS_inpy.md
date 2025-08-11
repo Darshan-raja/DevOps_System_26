@@ -20,6 +20,14 @@ RAM segment Dynamic memory allcoation to the object
 <Garbage collector> - Python automatically manages memory allocation and deallocation through a process called garbage collection.
 <Constructor> - A constructor is a special method in a class that is automatically called when an object is created. it is used to initialize the object's attributes. Python constructors do not have a return type, not even None.
 
+The <__init__> method is used to initialize a new object of the class.
+It sets up the initial values for the object’s attributes when the object is created.
+he <self> keyword refers to the current instance of the class.
+It is used to access or store attributes and methods that belong to that specific object.
+ Why is self necessary?
+<It allows each object to store its own values.>
+Without self, you can't assign or access instance-specific data.
+
 <Access Modifiers>
 - Public: accessible from anywhere
 - Private: accessible only within the class
