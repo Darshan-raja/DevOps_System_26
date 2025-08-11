@@ -594,9 +594,9 @@
 # if __name__ == "__main__":
 #     main()
 
-class darshan:
-    def __init__(self. my_Name, sefl .My_Age, self .my_Num):
-        self.my_Name = my_Name
-        self.my_Age = self.My_Age
-        self.my_Num = my_Num
-        
+class Darshan:
+        def __init__(self, My_name, My_age, My_address): #constructor to initialize the object with given parameters
+            self.My_name = My_name #store the name parameter
+            self.My_age = My_age #Store the age parameter
+            self.My_address = My_address #Store the address parameter
+            

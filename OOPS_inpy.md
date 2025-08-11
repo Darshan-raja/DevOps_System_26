@@ -10,7 +10,7 @@ oop stands for object-oriented programming. it is a programming paradigm that re
 for example, consider a student to mention the Obejct
 
 class student :
-Objects
+<Objects>
 (varibale name or intance variable calling ) student.new = new student()  (<NEW> is keyword" class name student () is called Object 
 with help of new keyword we can create new object in RAM of class student)
 RAM segment Dynamic memory allcoation to the object
