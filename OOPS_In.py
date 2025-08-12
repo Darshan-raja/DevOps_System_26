@@ -11,8 +11,7 @@ class Darshan:
         print("Age is:", self.My__age)
 
     def show_details(self):
-        """
-                 Full Spoken Explanation (Script-Style):
+        """Full Spoken Explanation (Script-Style):
         Here’s how you can explain this in front of your teacher:
 
         "In this program, I have created a class called Darshan with a constructor __init__ that initializes name, age, and address.
@@ -23,7 +22,7 @@ class Darshan:
         """
         print("Full Details:")
         print("Name:", self.My_name)
-        print("Age:", self.My__age) - +63
+        print("Age:", self.My__age)
         print("Address:", self.My_address)
 
     def __str__(self):
