@@ -1,21 +1,33 @@
-#what is loop?    
-#loop is a way to repeat a block of code multiple times
-#type of loop
-#1. For loop
-#2. While loop
-#3. Nested loop
+# what is loop?
+# loop is a way to repeat a block of code multiple times
+# type of loop
+# 1. For loop
+# 2. While loop
+# 3. Nested loop
 
-#For loop
-#syntax: for variable in iterable:
+# <For loop>
+# syntax: for in iterable:
 #        statement
-#Example of for loop
+# Example of for loop
 # for i in range(5):
 #     print(i)
-#i will take value from 0 to 4
-#range(5) is built-in function will generate n numbers
+# i will take value from 0 to 4
+#  is is a variable
+# "range"(5\) is built-in function will generate n numbers
+# for{vaiable name} in {iterable} in {collection}:
+# {collection} is a list, tuple, set, dictionary, string
+# {iterable} is a sequence of elements that can be iterated over
 # for dg in range(8,10):
 #       print(dg)
 
-value = range(6)
 
-print(value)    
+# print(value.count(4))
+
+for d in range(10, 5, -10):
+    # range(start, stop, step)
+    # start = 10: The first number in the sequence.
+    # stop = 5: The sequence stops before this number.
+    # step = -10: The sequence counts down by 10.
+    # The loop will only run once for the value 10.
+    print(d)
+

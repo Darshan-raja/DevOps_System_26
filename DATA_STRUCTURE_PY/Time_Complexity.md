@@ -16,3 +16,12 @@ Time complexity is a concept in computer science that describes the performance 
 | `O(2^n)`          | Exponential     | Recursive brute-force algorithms     |
 | `O(n!)`           | Factorial       | Permutations, combinatorial problems |
 | `O(2^{2^n})`      | Double Exponential | Advanced logic/automata problems  |
+
+
+✅ What does count in Space Complexity?
+1. Simple Variables (like count = 0)
+
+Yes — they are counted, but they use constant space, so:
+
+🟢 count = 0 → Space Complexity: O(1)
+Because it always takes the same space, no matter if your input is 10 or 10,000 elements.
