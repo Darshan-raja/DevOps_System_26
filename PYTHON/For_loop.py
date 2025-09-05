@@ -23,11 +23,16 @@
 
 # print(value.count(4))
 
-for d in range(10, 5, -10):
-    # range(start, stop, step)
-    # start = 10: The first number in the sequence.
-    # stop = 5: The sequence stops before this number.
-    # step = -10: The sequence counts down by 10.
-    # The loop will only run once for the value 10.
-    print(d)
+# for d in range(10, 5, -10):
+#     # range(start, stop, step)
+#     # start = 10: The first number in the sequence.
+#     # stop = 5: The sequence stops before this number.
+#     # step = -10: The sequence counts down by 10.
+#     # The loop will only run once for the value 10.
+#     print(d)
 
+
+for i in range(1, 5):  # Start a for loop that iterates through numbers from 1 to 4 (inclusive)
+    for k in range(1, 10):  # Iterate through numbers from 1 to 9 (inclusive)
+        print(k, end='')
+    print()  
