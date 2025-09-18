@@ -44,3 +44,7 @@ def fn ():
 returned = fn()
 returned()
 
+
+r = 4
+f = 8
+print(r //f, r % f )

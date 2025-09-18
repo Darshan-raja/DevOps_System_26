@@ -1,0 +1,72 @@
+Absolutely! Here's a neatly numbered list of all the quiz-style questions you've asked so far, along with their correct answers:
+
+---
+
+### 🧠 Python Quiz Recap
+
+**1. Which operator is used for exponentiation in Python?**  
+✅ `**`
+
+**2. Which data type is mutable in Python?**  
+✅ `List`, `Dictionary`, `Set`
+
+**3. Which command is typically used to install Python packages using pip?**  
+✅ `pip install package_name`
+
+**4. How do you check if two variables are equal in Python?**  
+✅ `x == y`
+
+**5. How do you access the first element of a list named `my_list`?**  
+✅ `my_list[0]`
+
+**6. What is the correct way to start a Python comment?**  
+✅ `#`
+
+**7. What does the `input()` function do in Python?**  
+✅ It reads input from the user
+
+**8. What are the two main types of functions in Python?**  
+✅ Built-in function & User-defined function
+
+**9. What is the output of the following code: `print("Hello, World!")`**  
+✅ `Hello, World!`
+
+**10. What is the correct way to end a Python statement?**  
+✅ By pressing Enter (newline) — no special character required
+
+**11. What does the `pop()` function do in Python?**  
+✅ Removes and returns the last element of a list
+
+**12. How do you access the last element of a list in Python?**  
+✅ `list[-1]`
+
+**13. Which command can be used to list all installed Python packages and their versions?**  
+✅ `pip list`
+
+**14. What is Python?**  
+✅ A programming language
+
+**15. What is the correct way to declare a Python list?**  
+✅ `[1, 2, 3]`
+
+**16. What does the `print()` function do in Python?**  
+✅ It displays output to the console
+
+**17. What does the `range()` function in Python generate?**  
+✅ A range object
+
+**18. What does the `keys()` function do in Python dictionaries?**  
+✅ Returns the keys of the dictionary
+
+**19. Which command can be used to upgrade pip to the latest version?**  
+✅ `pip install --upgrade pip`
+
+**20. How do you declare a variable in Python?**  
+✅ `x = 5` or `x = "5"`
+
+**21. What is the output of the following code: `print(2 + 3)`**  
+✅ `5`
+
+---
+
+Would you like me to turn this into a printable quiz sheet or add explanations for each answer?
