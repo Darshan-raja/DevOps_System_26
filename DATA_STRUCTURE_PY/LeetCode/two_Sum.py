@@ -23,3 +23,7 @@ def hashmap_debug_example():
 
 
 hashmap_debug_example()
+
+def _2sum(tar, num, self):
+    hashmap = {}
+    for i
