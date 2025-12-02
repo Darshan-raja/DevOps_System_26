@@ -13,7 +13,7 @@
 #     print(i)
 # i will take value from 0 to 4
 #  is is a variable
-# "range"(5\) is built-in function will generate n numbers it expect integer value
+# "range"(5) is built-in function will generate n numbers it expect integer value
 # range(start, stop, step)
 # for{vaiable name} in {iterable} in {collection}:
 # {collection} is a list, tuple, set, dictionary, string
@@ -38,9 +38,27 @@
 #     print(er)
 
 
-cars = ["TATA", "ford", "BMW", "AUdi"]  # list of cars
-for car in range(len(cars)):
-    cars.append("Rolls Royece")
-    cars.insert(3, "Lamborghini")
-    print(cars)
-    
+# cars = ["TATA", "ford", "BMW", "AUdi"]  # list of cars
+# for car in range(len(cars)):
+#     # append method add element at the end os the list
+#     cars.append("Rolls Royece")
+#     cars.insert(1, "Lamborghini")  # (index, value)
+#     print(cars)
+# 3*1 = 3
+
+# This code snippet is generating multiplication tables for numbers from 5 to 10.
+# for i in range(5, 11):
+#     print(f"Multiplication table of {i} is:")
+# for j in range(1, 11):
+#     # f meaning formatted string which is used to print variable value inside string
+#     print(f"{i} * {j}= {i*j} ")
+#
+
+
+# how to implement for loop in python and real life project
+# exmaple 1: Find the 2nd largest element in an array
+# for loop with conditions to find even numbers in a list
+num = [23, 74, 34, 89, 94, 92]
+for i in num:
+    if i % 2 == 0:
+        print(f"{i} is even number")

@@ -11,7 +11,8 @@ def hashmap_debug_example():
     # Create a dictionary with person's information
     person = {
         "name": "mom",
-        "age": 20,
+        
+        "age": 20,  
         "city": "delhi",
         "phone": 858456586854
     }
