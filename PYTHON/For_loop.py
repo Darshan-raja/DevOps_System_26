@@ -56,9 +56,44 @@
 
 
 # how to implement for loop in python and real life project
-# exmaple 1: Find the 2nd largest element in an array
+
 # for loop with conditions to find even numbers in a list
-num = [23, 74, 34, 89, 94, 92]
-for i in num:
-    if i % 2 == 0:
-        print(f"{i} is even number")
+# num = [23, 74, 34, 89, 94, 92]
+# for i in num:
+#     if i % 2 == 0:
+#         print(f"{i} is even number")
+
+# for num in range(4):
+#     if num == 4:
+#         # break  # use to exit the loop
+#         continue
+#     print(num)
+# def imyour(count):
+#     if count >= 7:
+#         return
+#     print("hey im your boyfriend")
+#     imyour(count + 1)
+
+
+# if __name__ == "__main__":
+#     imyour(1)
+
+# num = int(input("Enter a number : "))
+# for i in range(1, num+1):
+#     for j in range(1, i+1):
+#         print("*", end="")
+#     print()
+# This code snippet is creating a pattern of asterisks in a grid format. It is using nested for loops to print asterisks in rows and columns. The outer loop `for i in range(1, 4):` controls the rows, and the inner loop `for j in range(1, 4):` controls the columns.
+# for i in range(1, 4):
+#     for j in range(1, 4):
+#         # The end=" " parameter in the print function is used to add a space after each asterisk instead of moving to a new line.
+#         print("*", end=" ")
+#     # This print() is used to move to the next line after printing each row of asterisks.
+#     print()
+
+
+row = 5
+for i in range(1, row+5):
+    for k in range(1, row+1):
+        print("*", end=" ")
+    print()

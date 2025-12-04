@@ -11,8 +11,11 @@
 
 
 def imyour(count):
-    if count == 7:
+    if count >= 7:  # which is base case condition is used to stop the recursion
         return
     print("hey im your boyfriend")
-    count = 1
-    imyour()
+    imyour(count + 1)
+
+
+if __name__ == "__main__":
+    imyour(1)
