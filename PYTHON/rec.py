@@ -29,9 +29,10 @@ def sort(arr, arr2):  # arr arr2 are parameters
 
     if arr + 1 == len(arr2) - 1:  # base case arr + 1 is equal to length of arr2 -1 means we have reached the end of the array +1 is used to move to next element -1 is used to move to previous element
         return True
-
+    
     return sort(arr + 1, arr2)
 # whole code is checking if the array is sorted or not using recursion
 
-arr2 = [1, 2, 3, 9, 4]
+
+arr2 = [1, 2, 3, 4, 5]
 print(sort(0, arr2))
