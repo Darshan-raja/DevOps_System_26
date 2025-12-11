@@ -3,7 +3,6 @@ DevOps is a set of practices that combines software development (Dev) and IT ope
 
 DevOps practices include continuous integration, continuous delivery, continuous monitoring, and continuous improvement. These practices enable teams to work together more effectively, reduce the time to market, and improve the quality of software applications.
 
-devops roadmap: 
 
 
 
