@@ -32,3 +32,24 @@ System-level commands
 5. groupadd : is used to create a new group
 6. groupdel : is used to delete a group
 7. usermod : is used to modify a user'''
+8. Su : is used to switch to the root user
+9. sudo : is used to execute the commands with root privileges
+10. sudo su : is used to switch to the root user and execute the commands with root privileges
+11. sudo su - : is used to switch to the root user and execute the commands with root privileges and also load the root environment variables
+12. cat/etc/passwd : is used to view the password file
+13. cat /etc/group : is used to view the group file
+14. cat /etc/shadow : is used to view the shadow file
+15. sudo groupadd groupname : is used to create a new group
+16. sudo groupdel groupname : is used to delete a group
+17. sudo useradd -g groupname username : is used to create a new user in a group
+18. sudo gpasswd -a username groupname : is used to add a user to a group
+19. sudo gpasswd -d username groupname : is used to delete a user from a group
+20. sudo passwd username : is used to change the password of a user
+21. id username : is used to check the user id and group id of a user
+22. groups username : is used to check the groups of a user
+23. sudo usermod -aG groupname username : is used to add a user to a group
+24. sudo usermod -G groupname username : is used to remove a user from a group
+25. sudo chage -l username : is used to check the password expiry details of a user
+26. sudo chage -E YYYY-MM-DD username : is used to set the account expiry date of a user
+27. sudo chage -M days username : is used to set the maximum number of days a password is valid for a user
+28. sudo chage -m days username : is used to set the minimum number of days a password is valid for
