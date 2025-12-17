@@ -241,16 +241,11 @@ This file contains all essential Linux commands a DevOps fresher must know, expl
 **Example 1:** `sed -i 's/old/new/' file.txt`
 **Example 2:** `sed '1,10d' log.txt`
 
-cp -r: 
+
 
 
 ---
 
-If you want:
-
-* More commands added
-* DevOps examples added
-* Markdown converted into a downloadable `.md` file
 
 Tell me anytime!
 
@@ -273,6 +268,7 @@ Tell me anytime!
 | `mv` | Move or rename | `mv old.log new.log` |
 | `rm` | Remove files/directories | `rm -rf temp/` |
 | `ln` | Create hard/soft links | `ln -s /opt/app app_link` |
+        'ln -ltr' app_link # to see the target of the link
 
 ---
 
@@ -371,3 +367,11 @@ Tell me anytime!
 | `tar` | Archive files | `tar -czvf archive.tar.gz /path/to/files` |
 | `gzip` | Compress files | `gzip file.txt` |
 | `unzip` | Extract zip files | `unzip archive.zip` |
+
+interive questions
+
+hard link and soft link
+
+to make soft or hard link ls 
+
+
