@@ -7,5 +7,10 @@
             "scope": "workspace"
         }
     },
-    "Codegeex.CompletionDelay": 0.2
+    "Codegeex.CompletionDelay": 0.2,
+    "builder.serverUrl": " http://localhost:8080/",
+    "builder.command": "",
+    "builder.runDevServer": false,
+    "builder.autoDetectDevServer": true,
+    "builder.launchType": "editor"
 }
