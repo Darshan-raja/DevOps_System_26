@@ -70,3 +70,4 @@ System and software design documents are created based on requirements. This inc
 4. Building/Implementation: In this phase, the software is developed using the design created in the previous phase.
 5. Testing: In this phase, the software is tested to ensure that it meets the requirements and is free from defects.
 6. Deploying/ Maintenance: In this phase, the software is deployed to the production environment and maintained to ensure that it continues to meet the requirements and is free from defects.
+   1. Deployment: The software is deployed to the production environment.
