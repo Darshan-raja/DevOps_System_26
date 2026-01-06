@@ -36,7 +36,7 @@ This file contains all essential Linux commands a DevOps fresher must know, expl
 **Example 1:** `cd /var/log`
 **Example 2:** `cd ..`
 
-## 4. `pwd` – Print working directory
+## 4. `pwd` – Print working directory current working
 
 **Example 1:** `pwd`
 **Example 2:** `echo $(pwd)`
@@ -372,6 +372,14 @@ interive questions
 
 hard link and soft link
 
-to make soft or hard link ls 
+types of deployment
+public
+private
+hybrid
 
+IAAS (Infrastructure-as-a-Service) example : AWS EC2
+PAAS (Platform-as-a-Service)example : Heroku, AWS Lambda, Azure Functions, Google Cloud Functions, IBM Cloud Functions, OpenFaaS
+SAAS (Software-as-a-Service) xample : Google Docs, Slack, GitHub, Salesforce,
+FaaS (Function-as-a-Service) : AWS Lambda, Azure Functions, Google Cloud Functions, IBM Cloud Functions, OpenFaaS
+BaaS (Backend-as-a-Service) : Firebase, AWS Amplify, Google Firebase, Microsoft Azure, IBM Cloud, Oracle Cloud, SAP Cloud Platform
 
