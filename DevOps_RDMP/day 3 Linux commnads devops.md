@@ -62,13 +62,16 @@
     000(___) --> no permissions
     010 (_1_)--> read permission
     ls -l : is used to view the permissions of a file or directory
+    ls ./DevOps_RDMP/DevOps_Notes/
+    DevOps_System_26/
+ └── DevOps_RDMP/
+     └── DevOps_Notes/
     chmod : is used to change the permissions of a file or directory
     chown : is used to change the owner of a file or directory
     chgrp : is used to change the group of a file or directory
     sudo chmod permissions filename : is used to change the permissions of a file or directory
     sudo chown owner filename : is used to change the owner of a file or directory
-
-
+    
 Understood. Below is a **pure `.md` (Markdown) file**.
 You can **directly copy–paste this into a `.md` file** (for example: `day3-devops-commands.md`) and push it to GitHub.
 

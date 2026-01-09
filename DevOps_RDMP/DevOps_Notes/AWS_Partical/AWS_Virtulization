@@ -1,0 +1,9 @@
+**Virtualization**
+is the process of creating a virtual version of a computer system, server, storage device, or network resource that functions as a standalone entity. It allows multiple virtual machines (VMs) to run on a single physical machine, sharing its resources such as CPU, memory, and storage. Virtualization enables better resource utilization, increased flexibility, and enhanced security
+.
+
+Virtualization can be achieved through various technologies, including:
+
+1. **Hardware-assisted virtualization**: This involves using hardware features such as Intel VT-x or AMD-V to enable virtualization. It provides better performance and security compared to software-based virtualization.
+2. **Software-based virtualization**: This involves using software to create virtual machines. It is less resource-intensive but may have lower performance compared to hardware-assisted virtualization.
+3. **Containerization**: This involves using containerization technologies such as Docker to create lightweight, isolated environments for applications. It is similar to virtualization but provides better resource utilization and faster deployment.
