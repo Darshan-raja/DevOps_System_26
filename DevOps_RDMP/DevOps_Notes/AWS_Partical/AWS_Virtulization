@@ -5,7 +5,16 @@
 ## 🔹 What is Virtualization?
 
 **Simple Definition:**
-Virtualization is the process of creating **virtual (fake) computers** on a single **physical (real) computer**. 
+Virtualization is the process of creating **virtual (fake) computers** on a single **physical (real) computer
+
+
+Virtualization is a technology that allows a single physical computer (hardware) to be divided into 
+multiple virtual machines (VMs). Each VM behaves like an independent computer with its own 
+operating system, CPU, memory (RAM), storage, and network resources. 
+In simple terms, virtualization enables one physical machine to run multiple isolated operating 
+systems simultaneously.
+
+
 
 **Real-World Analogy:**
 Imagine you have a big building (your server). Instead of renting the entire building to one company, you divide it into multiple apartments and rent each to different companies. Each company feels like they have their own building, but they're actually sharing the same resources (electricity, water, security, etc.).
@@ -20,12 +29,11 @@ Imagine you have a big building (your server). Instead of renting the entire bui
 
 ## 🔹 Virtualization Architecture (Layer by Layer)
 
-```
 ┌─────────────────────────────────────────┐
 │     Virtual Machine 1 (Linux OS)        │
 │  ┌──────────────────────────────────┐   │
 │  │  Your Applications (Software)    │   │
-│  └────────────────────────    ──────────┘   │
+│  └────────────────────────    ──────────┘
 └─────────────────────────────────────────┘
 ┌─────────────────────────────────────────┐
 │     Virtual Machine 2 (Windows OS)      │
@@ -41,7 +49,6 @@ Imagine you have a big building (your server). Instead of renting the entire bui
 │     PHYSICAL HARDWARE (Real Server)     │
 │  CPU | RAM | Storage | Network          │
 └─────────────────────────────────────────┘
-```
 
 ---
 
@@ -51,7 +58,7 @@ Imagine you have a big building (your server). Instead of renting the entire bui
 A **Hypervisor** is like a **traffic police officer** that manages virtual machines. It divides physical resources (CPU, RAM, storage) among multiple virtual machines fairly.
 
 **What Does a Hypervisor Do?**
-1. Creates virtual machines
+   Creates virtual machines (Virtualization)
 2. Allocates CPU, RAM, and storage to each VM
 3. Manages which VM gets resources at which time
 4. Ensures one VM doesn't take all resources
@@ -62,7 +69,7 @@ A **Hypervisor** is like a **traffic police officer** that manages virtual machi
 ### Type 1: Bare-Metal Hypervisor (Professional)
 - Runs directly on physical hardware
 - No Host OS needed
-- **Better performance** ✅
+- **Better performance** ✅     
 - **Example**: AWS EC2, VMware ESXi, Hyper-V
 - **Used by**: Companies with servers
 
@@ -251,4 +258,5 @@ Do you need a full Operating System?
 - Then learn **Docker/Containers**
 - Finally, explore **Lambda**
 
----
+--> Tpes of Cloud Computing: IaaS, PaaS, SaaS in 
+IaaS: Infrastructure as a Service
