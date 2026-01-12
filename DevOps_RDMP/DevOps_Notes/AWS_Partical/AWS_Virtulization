@@ -260,3 +260,16 @@ Do you need a full Operating System?
 
 --> Tpes of Cloud Computing: IaaS, PaaS, SaaS in 
 IaaS: Infrastructure as a Service
+PaaS: Platform as a Service
+SaaS: Software as a Service
+
+--> AWS Services are IAM, EC2, S3, RDS, Lambda, VPC, CloudFront, Route53, CloudWatch,
+IAM : Identity and Access Management
+**EC2**: Elastic Compute Cloud (Virtual Servers)
+**S3**: Simple Storage Service (Object Storage)
+**RDS**: Relational Database Service (Managed Databases)
+**Lambda**: Serverless Compute Service
+**VPC**: Virtual Private Cloud (Networking)
+**CloudFront**: Content Delivery Network (CDN)
+**Route53**: Domain Name System (DNS) Web Service
+**CloudWatch**: Monitoring and Observability Service
