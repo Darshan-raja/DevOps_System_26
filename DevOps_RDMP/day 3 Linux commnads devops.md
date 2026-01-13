@@ -76,7 +76,7 @@ cd ~
 
 ## Listing & Navigation
 
-### ls
+## ls
 
 List files and directories.
 
