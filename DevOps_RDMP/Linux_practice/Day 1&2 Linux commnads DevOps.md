@@ -53,5 +53,6 @@ exmple : kill 1234
 2. mkdir ""newfoldername"" && touch ""newfoldername/newfilename.txt""
     (create a directory and a file in one command). "&&" is used to execute the second command only if the first command is successful.
    exmaple : mkdir project && touch project/file1.txt project/file2.txt
+
 3. mkdir  ""dir 1"" && mkdir ""dir 2"" && mkdir ""dir 3"" (create three directories in one command).
    exmaple : mkdir dir1 dir2 dir3
