@@ -56,3 +56,6 @@ exmple : kill 1234
 
 3. mkdir  ""dir 1"" && mkdir ""dir 2"" && mkdir ""dir 3"" (create three directories in one command).
    exmaple : mkdir dir1 dir2 dir3
+   <br>
+   lksnlkn
+   <br>
