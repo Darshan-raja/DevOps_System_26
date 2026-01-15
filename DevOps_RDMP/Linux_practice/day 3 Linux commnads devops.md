@@ -1,6 +1,67 @@
 # Day 3 DevOps Commands
 
-## Basic Linux Commands – Complete Notes (Single Page)
+## File Commands
+
+### cat
+
+Display the contents of a file.
+Example:
+
+```bash
+cat file.txt
+```
+
+### cat file1 file2
+
+Concatenate and display the contents of multiple files.
+
+Example:
+
+```bash
+cat file1.txt file2.txt
+```
+
+### cat > file.txt
+
+Create a new file or overwrite an existing file with the contents of standard input.
+
+Example:
+
+### cat file.txt >> new_file.txt
+
+Append the contents of file.txt to new_file.txt.
+
+Example:
+
+```bash
+cat file.txt >> new_file.txt
+```
+
+### cat file.txt | grep "search term"
+
+Search for a specific term in a file.
+
+Example:
+
+```bash
+cat file.txt | grep "search term"
+```
+
+### cat file.txt | wc -l
+
+Count the number of lines in a file.
+
+Example:
+Copy or Merge File Contents Using cat Command
+
+ command can combine the content of one or more files and redirect it into another file using >.
+
+Syntax:
+
+cat file1 file2 > new_file
+Example:
+
+cat file1.txt file2.txt > merged_file.txt
 
 ## Directory Commands
 
