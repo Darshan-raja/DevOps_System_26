@@ -50,7 +50,8 @@ exmple : kill 1234
 1. ls -l | grep "hello" (list all files and directories and search for "hello" in the output).
    exmaple : ls -l | grep "hello" | wc -l (list all files and directories and search for "hello" in the output and count the number of lines).
 
-2. mkdir ""newfoldername"" && touch ""newfoldername/newfilename.txt"" (create a directory and a file in one command). "&&" is used to execute the second command only if the first command is successful.
+2. mkdir ""newfoldername"" && touch ""newfoldername/newfilename.txt""
+    (create a directory and a file in one command). "&&" is used to execute the second command only if the first command is successful.
    exmaple : mkdir newfolder && touch newfolder/newfile.txt
 3. mkdir  ""dir 1"" && mkdir ""dir 2"" && mkdir ""dir 3"" (create three directories in one command).
    exmaple : mkdir dir1 dir2 dir3
