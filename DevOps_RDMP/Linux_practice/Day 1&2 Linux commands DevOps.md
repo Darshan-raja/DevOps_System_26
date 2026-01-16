@@ -61,4 +61,4 @@ example : kill 1234
    example : mkdir dir1 dir2 dir3
 4. touch ""file1.txt"" ""file2.txt"" ""file3.txt"" (create three files in one command).
    example : touch file1.txt file2.txt file3.txt
-   
+

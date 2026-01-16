@@ -24,7 +24,7 @@ Below is **clean Markdown (.md)** with **no extra gaps between sections** (compa
 
 ### File & Directory Management
 
-   **mkdir** (make directory)
+8. **mkdir** (make directory)
    Example: `mkdir newfolder`
 9. **rmdir** (remove empty directory)
    Example: `rmdir newfolder`
