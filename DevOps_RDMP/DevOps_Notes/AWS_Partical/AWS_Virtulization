@@ -273,3 +273,14 @@ IAM : Identity and Access Management
 **CloudFront**: Content Delivery Network (CDN)
 **Route53**: Domain Name System (DNS) Web Service
 **CloudWatch**: Monitoring and Observability Service
+
+
+EC2 compenents:
+1. AMI (Amazon Machine Image)
+2. Instance Types
+3. EBS (Elastic Block Store)
+4. Security Groups
+5. Key Pairs
+6. Elastic IPs
+7. Load Balancers
+8. Auto Scaling Groups
