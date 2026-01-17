@@ -349,7 +349,7 @@ Example:
 pwd
 ```
 
-## File Commands
+File Commands
 
 ### touch file
 
@@ -514,7 +514,7 @@ Master these commands for interviews and production systems.
 ### Permission Format: `drwxrwxr-x`
 
 - `d` - directory
-- `-` - file
+- `-` - file 
 - `r` - read
 - `w` - write
 - `x` - execute
