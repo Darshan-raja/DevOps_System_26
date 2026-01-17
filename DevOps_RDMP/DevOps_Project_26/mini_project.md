@@ -2,6 +2,7 @@ Project Overview
 
 This demo project demonstrates how to securely launch an Ubuntu EC2 instance in AWS and connect to it using an RSA-based key pair. The project focuses on key pair management, SSH authentication, and basic troubleshooting—core skills expected from a DevOps engineer.
 ---
+RSA Key Pair Management
 
 # Step-by-Step Demo: Launch Ubuntu EC2 and Connect Using Key Pair
 
