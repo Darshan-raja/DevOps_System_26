@@ -1,4 +1,4 @@
---> ##Linux for DevOps basic commands with examples ##
+--> Linux for DevOps basic commands with examples
 
 1. ls (list).
 example : ls
