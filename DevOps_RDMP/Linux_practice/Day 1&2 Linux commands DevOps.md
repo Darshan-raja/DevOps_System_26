@@ -61,4 +61,20 @@ example : kill 1234
    example : mkdir dir1 dir2 dir3
 4. touch ""file1.txt"" ""file2.txt"" ""file3.txt"" (create three files in one command).
    example : touch file1.txt file2.txt file3.txt
+5. ls -l | grep "hello" | wc -l (list all files and directories and search for "hello" in the output and count the number of lines).
+   example : ls -l | grep "hello" | wc -l
+6. rm ""file1.txt"" ""file2.txt"" ""file3.txt"" (remove three files in one command).
+   example : rm file1.txt file2.txt file3.txt
+7. rm -r ""dir1"" ""dir2"" ""dir3"" (remove three directories and their contents in one command).
+   example : rm -r dir1 dir2 dir3
 
+--> PATH Commands:
+
+Two types of Path commands:
+
+1. Absolute path: The full path from the root directory to the file or directory.
+   example : /home/user/documents/file.txt
+2. Relative path: The path from the current directory to the file or directory.
+   example : documents/file.txt
+
+--> File permissions:
