@@ -110,3 +110,13 @@ EX 2 /                                          (root directory)
    12. .. is used to refer to the parent directory.
 
 --> File permissions: -->
+1. read (r) → allows you to view the contents of a file. iD is " -r : 4"
+2. write (w) → allows you to modify the contents of a file. iD is " -w : 2"
+3. execute (x) → allows you to run a file as a program. iD is " -x : 1"
+4. cd
+5. owner → the person who created the file.
+6. group → a group of people who have access to the file.
+7. others → everyone else who has access to the file.
+8. chmod → change the permissions of a file.
+9. chown → change the owner of a file.
+10. chgrp → change the group of a file.
