@@ -54,13 +54,15 @@ If you want next, I can **optimize this to a 10-minute verbal interview script**
 
 3. mkdir  ""dir 1"" && mkdir ""dir 2"" && mkdir ""dir 3"" (create three directories in one command).
    example : mkdir dir1 dir2 dir3
-4. touch ""file1.txt"" ""file2.txt"" ""file3.txt"" (create three files in one command).
+4. mkdir -p is used to create nesated directories.
+5. exmple mikdir -p ""dir1/dir2/dir3"" (create nested directories in one command).
+6. touch ""file1.txt"" ""file2.txt"" ""file3.txt"" (create three files in one command).
    example : touch file1.txt file2.txt file3.txt
-5. ls -l | grep "hello" | wc -l (list all files and directories and search for "hello" in the output and count the number of lines).
+7. ls -l | grep "hello" | wc -l (list all files and directories and search for "hello" in the output and count the number of lines).
    example : ls -l | grep "hello" | wc -l
-6. rm ""file1.txt"" ""file2.txt"" ""file3.txt"" (remove three files in one command).
+8. rm ""file1.txt"" ""file2.txt"" ""file3.txt"" (remove three files in one command).
    example : rm file1.txt file2.txt file3.txt
-7. rm -r ""dir1"" ""dir2"" ""dir3"" (remove three directories and their contents in one command).
+9. rm -r ""dir1"" ""dir2"" ""dir3"" (remove three directories and their contents in one command).
    example : rm -r dir1 dir2 dir3
 
 --**> PATH Commands:**
