@@ -274,8 +274,7 @@ IAM : Identity and Access Management
 **Route53**: Domain Name System (DNS) Web Service
 **CloudWatch**: Monitoring and Observability Service
 
-
-EC2 compenents:
+--> EC2 compenents:
 1. AMI (Amazon Machine Image)
 2. Instance Types
 3. EBS (Elastic Block Store)
@@ -284,3 +283,28 @@ EC2 compenents:
 6. Elastic IPs
 7. Load Balancers
 8. Auto Scaling Groups
+
+--> Types Instances:
+1. General Purpose
+2. Compute Optimized
+3. Memory Optimized
+4. Storage Optimized
+5. HPC Optimized
+6. Acclerated Computing
+
+1. General Purpose: Balanced CPU, Memory, and Networking (e.g., t3, m5)
+    usecases: web servers, small databases, development environments
+2. Compute Optimized: High CPU performance (e.g., c5, c6g)
+    usecases: data processing, batch jobs, high-performance computing
+3. Memory Optimized: High memory capacity (e.g., r5, x1e)
+    usecases: memory-intensive applications, databases, big data analytics, in-memory caches,
+4. Storage Optimized: High disk throughput (e.g., i3, d2)
+    usecases: databases, file servers, storage-intensive applications
+5. HPC Optimized: High Performance Computing (e.g., hpc6a)
+    usecases: scientific computing, simulations, high-performance computing
+4. Storage Optimized: High disk throughput (e.g., i3, d2
+    usecases: databases, file servers, storage-intensive applications)
+5. HPC Optimized: High Performance Computing (e.g., hpc6a)
+    usecases: scientific computing, simulations, high-performance computing
+6. Accelerated Computing: GPU-based instances for ML/AI (e.g., p3, g4)
+    usecases: machine learning, AI, graphics rendering, video processing, GPU-intensive applications
