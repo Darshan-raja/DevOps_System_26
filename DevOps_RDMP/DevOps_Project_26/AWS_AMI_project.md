@@ -1,4 +1,5 @@
-![alt text](<DevOps_RDMP/AIM pic.jpeg>)
+
+![alt text](<AIM pic.jpeg>)
 
 # AWS AMI project
 
