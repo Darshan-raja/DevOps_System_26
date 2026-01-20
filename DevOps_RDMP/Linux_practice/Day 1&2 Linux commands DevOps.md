@@ -122,4 +122,3 @@ EX 2 /                                          (root directory)
 8. chmod → change the permissions of a file.
 9. chown → change the owner of a file.
 10. chgrp → change the group of a file.
-11. 
