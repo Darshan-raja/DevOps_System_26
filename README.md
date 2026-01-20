@@ -1,9 +1,15 @@
 ![MasterHead](https://cdn.dribbble.com/userupload/7725814/file/original-ad34e5a3d587a8a90b6586de67710225.gif)
-├───DevOps_RDMP
-│   ├───DevOps_Interview
-│   ├───DevOps_Notes
-│   │   └───AWS_Partical
-│   ├───DevOps_Project_26
-│   └───Linux_practice
+
+## Repository Structure
+
+```text
+DevOps_RDMP
+├── DevOps_Interview        # Interview Q&A
+├── DevOps_Notes            # Theory and notes
+│   └── AWS_Partical
+│       └── README.md       # AWS hands-on notes
+├── DevOps_Project_26       # Real-world projects
+└── Linux_practice          # Linux commands & labs
+
 
 <h1 align="center">Hi 👋, I'm Darshan DG</h1>
