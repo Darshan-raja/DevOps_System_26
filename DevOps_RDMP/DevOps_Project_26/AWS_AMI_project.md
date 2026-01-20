@@ -479,5 +479,3 @@ One-Line Interview Closing Statement
 
 ----------------------------------------
 <img width="1866" height="1023" alt="Screenshot 2026-01-20 221803" src="https://github.com/user-attachments/assets/90335d26-bf12-47b3-85ad-f1a22ad02f1a" />
-
-
