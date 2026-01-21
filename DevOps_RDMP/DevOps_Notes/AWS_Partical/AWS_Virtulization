@@ -308,3 +308,4 @@ IAM : Identity and Access Management
     usecases: scientific computing, simulations, high-performance computing
 6. Accelerated Computing: GPU-based instances for ML/AI (e.g., p3, g4)
     usecases: machine learning, AI, graphics rendering, video processing, GPU-intensive applications
+    
