@@ -1,5 +1,5 @@
 # Scalable Web Application Infrastructure Using AWS ASG & ALB
-
+![alt text](<EBL project.png>)
 ## Project Overview
 
 In this project, I designed and implemented a **highly available and scalable web application infrastructure on AWS** using **Auto Scaling Groups (ASG)** and an **Application Load Balancer (ALB)**.
