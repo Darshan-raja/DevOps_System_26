@@ -164,6 +164,7 @@ The Load Balancer stops routing traffic to it, and the Auto Scaling Group replac
 
 ## Key Learnings From This Project
 
+
 - Designed a **scalable and highly available AWS architecture**
 - Hands-on experience with **ASG, ALB, Launch Templates, and AMIs**
 - Implemented **automatic scaling using CloudWatch**
@@ -177,3 +178,24 @@ The Load Balancer stops routing traffic to it, and the Auto Scaling Group replac
 > Built a scalable AWS infrastructure using Auto Scaling Groups and Application Load Balancer to ensure high availability, fault tolerance, and cost efficiency.
 
 ---
+<img width="1498" height="532" alt="Screenshot 2026-01-21 203202" src="https://github.com/user-attachments/assets/1b3c8960-ac97-4ddb-b791-b801dd15f98a" />
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1905" height="972" alt="Screenshot 2026-01-21 202813" src="https://github.com/user-attachments/assets/5b5a62b3-53f4-462b-9be9-ecf133b8f092" />
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1581" height="586" alt="Screenshot 2026-01-21 202601" src="https://github.com/user-attachments/assets/3e7ef19a-4b57-4361-b635-fe0552b4d82e" />
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+<img width="1581" height="441" alt="Screenshot 2026-01-21 202650" src="https://github.com/user-attachments/assets/a7097394-9e26-4afd-91b1-caea2d3683e0" />
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1593" height="522" alt="Screenshot 2026-01-21 202526" src="https://github.com/user-attachments/assets/793fe270-846b-438d-929e-3b85081339b1" />
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1600" height="369" alt="Screenshot 2026-01-21 202456" src="https://github.com/user-attachments/assets/79066358-8ca0-4aba-bdac-72924fb866b3" />
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<img width="1609" height="710" alt="Screenshot 2026-01-21 202729" src="https://github.com/user-attachments/assets/0c1c2715-2f54-4522-9e57-53c7d72d1e2c" />
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<img width="1905" height="972" alt="Screenshot 2026-01-21 202813" src="https://github.com/user-attachments/assets/103637dc-36a4-4189-952d-863b527ebe75" />
+
