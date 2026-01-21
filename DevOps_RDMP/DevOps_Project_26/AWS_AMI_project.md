@@ -121,7 +121,8 @@ Start & enable NGINX:
 Step 10: Download Website ZIP File
 
     ```bash
-    wget -O website.zip "filelink"
+    wget -O filename.zip "filelink"
+        example wget -O website.zip "link.com"
     ```
 
 **Explanation:**
@@ -479,3 +480,4 @@ One-Line Interview Closing Statement
 
 ----------------------------------------
 <img width="1866" height="1023" alt="Screenshot 2026-01-20 221803" src="https://github.com/user-attachments/assets/90335d26-bf12-47b3-85ad-f1a22ad02f1a" />
+
