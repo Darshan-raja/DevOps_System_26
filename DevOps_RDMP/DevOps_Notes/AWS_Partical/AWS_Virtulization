@@ -301,21 +301,7 @@ Do you need a full Operating System?
 Amazon Web Services (AWS) is a cloud Services platform which allow users to access cloud services its is on-demand basis pay as you go method. it is a subsidiary of amazon.com
 
 #--> AWS Services are IAM, EC2, S3, RDS, Lambda, VPC, CloudFront, Route53, CloudWatch,\
-
-# AWS is global cloud infrastructure provider 
-it provide services in different region and availability zones.
-Resgion: is a geographical area where AWS has data centers.
-example: us-east-1 (N. Virginia), eu-west-1 (Ireland), ap-south-1 (Mumbai)
-
---> how many region are availability?
---> there are 39 region.
-
-
-
-Availability Zone: is a data center in a region.
-Example: us-east-1a, us-east-1b, us-east-1c, us-east-1d (4 availability zones in N. indiana region)
-Total numbers Availability 
-IAM : Identity and Access Management
+ IAM : Identity and Access Management
 **EC2**: Elastic Compute Cloud (Virtual Servers)
 **S3**: Simple Storage Service (Object Storage)
 **RDS**: Relational Database Service (Managed Databases)
@@ -334,6 +320,94 @@ IAM : Identity and Access Management
 6. Elastic IPs
 7. Load Balancers
 8. Auto Scaling Groups
+
+# AWS is global cloud infrastructure provider 
+it provide services in different region and availability zones.
+Region: is a geographical area where AWS has data centers.
+example: us-east-1 (N. Virginia), eu-west-1 (Ireland), ap-south-1 (Mumbai)
+
+--> how many region are availability?
+--> there are 38 region.
+
+-->Availability Zone: is a data center in a region.
+Example: us-east-1a, us-east-1b, us-east-1c, us-east-1d (4 availability zones in N. indiana region)
+Total numbers Availability 120+
+
+Region edge location : small data center that deliver content to end users with low latency.
+total numbers edge location 700 plus
+
+Regional edge cache : is a larger cache that sits between your origin server and global edge locations. Edge caches help improve performance for your viewers by storing content that is not frequently accessed at a location closer to them.
+as per recode 13 edge cache location
+ **Your numbers are slightly outdated. As of early 2026, AWS has 39 active Regions, 123 Availability Zones, over 600 edge locations, and 13 regional edge caches.**  
+
+Here’s the corrected breakdown:
+
+---
+
+### 🌍 AWS Regions
+- **Definition:** A Region is a geographical area where AWS clusters multiple data centers.  
+- **Current Count:** **39 Regions** (with announced plans for more, e.g., Saudi Arabia and Chile).  
+- **Examples:**  
+  - `us-east-1` → N. Virginia  
+  - `eu-west-1` → Ireland  
+  - `ap-south-1` → Mumbai  
+- **Correction:** You mentioned **38 Regions**, but AWS now lists **39 Regions**.
+
+---
+
+### 🏢 Availability Zones (AZs)
+- **Definition:** Distinct data centers within a Region, each isolated but interconnected.  
+- **Current Count:** **123 Availability Zones** worldwide.  
+- **Example:** `us-east-1a`, `us-east-1b`, `us-east-1c`, `us-east-1d` (N. Virginia has 6 AZs now, not 4).  
+- **Correction:** You noted **120+ AZs**, which was close, but the precise number is **123 AZs**.
+
+---
+
+### ⚡ Edge Locations
+- **Definition:** Smaller data centers used by Amazon CloudFront and other services to cache content closer to end users, reducing latency.  
+- **Current Count:** **600+ edge locations globally**.  
+- **Correction:** You mentioned **700+**, but AWS officially reports **over 600**. The number fluctuates as AWS expands, but it is not yet 700.
+
+---
+
+### 🗄️ Regional Edge Caches
+- **Definition:** Larger caches positioned between origin servers and edge locations, storing less frequently accessed content to improve performance.  
+- **Current Count:** **13 regional edge caches** worldwide.  
+- **Your Note:** Correct — AWS confirms **13**.
+
+---
+
+### ✅ Summary Table
+
+| Component              | Your Numbers | Correct (2026) |
+|------------------------|--------------|----------------|
+| Regions                | 38           | **39** |
+| Availability Zones     | 120+         | **123** |
+| Edge Locations         | 700+         | **600+** |
+| Regional Edge Caches   | 13           | **13** |
+
+
+# --> 1st service EC2 (Elastic Compute Cloud) 2006 lanched
+which provide on demand scalable, felxibale and resizable VM over the internet.
+ compute capacity in cloud. it is virtual server.
+
+# components of EC2:
+1. AMI (Amazon Machine Image)
+2. Instance
+3. EBS (Elastic Block Store)
+4. Security Groups
+5. Key Pairs
+6. Elastic IPs
+7. Load Balancers
+8. Auto Scaling Groups
+
+#Instance 
+what is Instance?
+An Instance is a renting virtual server in the AWS cloud. It runs applications on the Amazon EC2
+infrastructure.  You can choose different types of instances based on your needs for CPU, memory, storage, and networking capacity.
+
+## AMI (Amazon Machine Image)
+AMI is a pre-configured template for your EC2 instance that includes the operating system, application server, and applications. It is used to create new instances.
 
 --> Types Instances:
 1. General Purpose
