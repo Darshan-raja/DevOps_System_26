@@ -392,22 +392,41 @@ which provide on demand scalable, felxibale and resizable VM over the internet.
  compute capacity in cloud. it is virtual server.
 
 # components of EC2:
-1. AMI (Amazon Machine Image)
-2. Instance
-3. EBS (Elastic Block Store)
-4. Security Groups
-5. Key Pairs
-6. Elastic IPs
-7. Load Balancers
-8. Auto Scaling Groups
+1. Instance*
+2. AMI (Amazon Machine Image)*
+4. EBS (Elastic Block Store)*
+5. Security Groups
+6. Key Pairs
+7. Elastic IPs
+8. Load Balancers
+9. ASG (Auto Scaling Groups)
 
-#Instance 
+#Instance
 what is Instance?
 An Instance is a renting virtual server in the AWS cloud. It runs applications on the Amazon EC2
-infrastructure.  You can choose different types of instances based on your needs for CPU, memory, storage, and networking capacity.
+infrastructure. You can choose different types of instances based on your needs for CPU, memory, storage, and networking capacity.
+exmoaple: t2.micro, m5.large, c5.xlarge, r5.2xlarge, etc.
+
+# EBS (Elastic Block Store)
+is a Scalable and high-performance block storage service designed for use with Amazon EC2 instances. EBS provides persistent storage that can be attached to EC2 instances, allowing data to persist even after the instance is stopped or terminated.
+exmoaple: databases, file systems, applications that require low-latency access to data.
+example: SSD-backed storage for high-performance applications, HDD-backed storage for throughput-intensive workloads.
 
 ## AMI (Amazon Machine Image)
-AMI is a pre-configured template for your EC2 instance that includes the operating system, application server, and applications. It is used to create new instances.
+is a blueprint that contains the necessary information to launch an EC2 instance. It includes the operating system, application server, and applications required for your instance.
+exmoaple: Linux, Windows, Ubuntu, Red Hat, etc.
+
+# Security Groups
+is a virtual firewall that controls inbound and outbound traffic for EC2 instances. It acts as a security layer to protect your instances from unauthorized access.
+exmample: allow SSH (port 22) access from specific IP addresses, allow HTTP (port 80) traffic from anywhere.
+
+#ASG (Auto Scaling Groups)
+is based on demand scaling condition, requirement it will automatically add or remove EC2 instances to maintain application availability and optimize costs.
+
+# ELB (Elastic Load Balancer)
+is a service that automatically distributes incoming application traffic across multiple EC2 instances. It helps improve the
+it is horizontal scaling. and  scaling means adding more instances to handle increased load.
+exampple: web applications, microservices architectures, high-availability systems.
 
 --> Types Instances:
 1. General Purpose
