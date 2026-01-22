@@ -21,10 +21,10 @@ examople: OpenStack, VMware vSphere, Microsoft Azure Stack. bank, government age
 1. Multi-Cloud: Is the use of multiple Cloud services from different providers to meet specific business needs. It allows organizations to avoid vendor lock-in, improve redundancy, and optimize performance.example: Using AWS for compute, Azure for AI services, and GCP for data analytics.
 
 2. Cloud Service models :
-- Infrastructure as a Service (IaaS): Is a Cloud service that provides users with access to computing resources, such as servers, storage, and networking, on a pay-as-you-go basis. It allows users to provision and manage their own virtual machines, storage, and network resources.example: AWS EC2, Microsoft Azure Virtual Machines, Google Compute Engine. 
+- Infrastructure as a Service (IaaS): Is a Cloud service that provides users with access to computing resources, such as servers, storage, and networking, on a pay-as-you-go basis. It allows users to provision and manage their own virtual machines, storage, and network resources.example: AWS EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
 
 - Platform as a Service (PaaS): Is a Cloud service that provides users with a platform to develop, deploy, which providers OS runtime environmnest work into pay as u go method.
-example: AWS Elastic Beanstalk, Microsoft Azure App Service, Google App Engine. 
+example: AWS Elastic Beanstalk, Microsoft Azure App Service, Google App Engine.
 
 - Software as a Service (SaaS): Is a Cloud service that provides users  
 with access to software applications over the internet. It allows users to use the software without the need to install, maintain, or update it.example: Google Workspace (Gmail, Google Drive), Microsoft 365 (Outlook, OneDrive), Salesforce.
@@ -294,12 +294,27 @@ Do you need a full Operating System?
 - Then learn **Docker/Containers**
 - Finally, explore **Lambda**
 
---> Tpes of Cloud Computing: IaaS, PaaS, SaaS in 
-IaaS: Infrastructure as a Service
-PaaS: Platform as a Service
-SaaS: Software as a Service
+-----------------------------------------------------------------------------------------------------
 
---> AWS Services are IAM, EC2, S3, RDS, Lambda, VPC, CloudFront, Route53, CloudWatch,
+# AWS (amazon web services)
+--> What is AWS?
+Amazon Web Services (AWS) is a cloud Services platform which allow users to access cloud services its is on-demand basis pay as you go method. it is a subsidiary of amazon.com
+
+#--> AWS Services are IAM, EC2, S3, RDS, Lambda, VPC, CloudFront, Route53, CloudWatch,\
+
+# AWS is global cloud infrastructure provider 
+it provide services in different region and availability zones.
+Resgion: is a geographical area where AWS has data centers.
+example: us-east-1 (N. Virginia), eu-west-1 (Ireland), ap-south-1 (Mumbai)
+
+--> how many region are availability?
+--> there are 39 region.
+
+
+
+Availability Zone: is a data center in a region.
+Example: us-east-1a, us-east-1b, us-east-1c, us-east-1d (4 availability zones in N. indiana region)
+Total numbers Availability 
 IAM : Identity and Access Management
 **EC2**: Elastic Compute Cloud (Virtual Servers)
 **S3**: Simple Storage Service (Object Storage)
