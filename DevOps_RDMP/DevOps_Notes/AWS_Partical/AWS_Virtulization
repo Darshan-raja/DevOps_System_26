@@ -436,20 +436,27 @@ exampple: web applications, microservices architectures, high-availability syste
 5. HPC Optimized
 6. Acclerated Computing
 
-1. General Purpose: Balanced CPU, Memory, and Networking (e.g., t3, m5)
+1. General Purpose: Balanced CPU, Memory, and Networking  (family  e.g., t3, m5)
     usecases: web servers, small databases, development environments
-2. Compute Optimized: High CPU performance (e.g., c5, c6g)
+2. Compute Optimized: High CPU performance (family e.g., c5, c6g)
     usecases: data processing, batch jobs, high-performance computing
-3. Memory Optimized: High memory capacity (e.g., r5, x1e)
+3. Memory Optimized: High memory capacity (family e.g., r5, x1e)
     usecases: memory-intensive applications, databases, big data analytics, in-memory caches,
-4. Storage Optimized: High disk throughput (e.g., i3, d2)
+4. Storage Optimized: High disk throughput (family e.g., i3, d2)
     usecases: databases, file servers, storage-intensive applications
-5. HPC Optimized: High Performance Computing (e.g., hpc6a)
+5. HPC Optimized: High Performance Computing (family e.g., hpc6a)
     usecases: scientific computing, simulations, high-performance computing
-4. Storage Optimized: High disk throughput (e.g., i3, d2
+4. Storage Optimized: High disk throughput (family e.g., i3, d2
     usecases: databases, file servers, storage-intensive applications)
-5. HPC Optimized: High Performance Computing (e.g., hpc6a)
+5. HPC Optimized: High Performance Computing (family e.g., hpc6a)
     usecases: scientific computing, simulations, high-performance computing
-6. Accelerated Computing: GPU-based instances for ML/AI (e.g., p3, g4)
+6. Accelerated Computing: GPU-based instances for ML/AI (family e.g., p3, g4)
     usecases: machine learning, AI, graphics rendering, video processing, GPU-intensive applications
+
+# life cycle of EC2 instance:
+1. Launching
+2. Running
+3. Stopping 
+4. Terminating
+5. Rebooting
     
