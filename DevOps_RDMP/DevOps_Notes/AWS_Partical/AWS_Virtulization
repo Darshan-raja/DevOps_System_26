@@ -1,4 +1,23 @@
+# Cloud computing
+what is Cloud computing?
+
+Cloud computing is a technology that allows users to access computing resources, such as IT resources, such as servers, storage, databases, software, analytics, and intelligence, over the internet. It allows users to access and use these resources remotely, without the need to purchase, own, or maintain them physically.
+
+#types of Cloud computing
+1. Clod Deployment models 2 . Cloud Service models
+
+
+1. Cloud Deployment models:
+- Public Cloud : Is service that any one can access over the internet and manage by third party providers. Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+- Private Cloud
+- Hybrid Cloud
+- Community Cloud
+- Multi-Cloud
+
+2. Cloud Service models
+
 # AWS Virtualization Guide for Freshers
+
 
 ---
 
