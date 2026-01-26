@@ -388,6 +388,8 @@ Here’s the corrected breakdown:
 
 
 # --> 1st service EC2 (Elastic Compute Cloud) 2006 lanched
+-->#what is EC2?
+Amazon Elastic Compute Cloud (EC2) is a web service that provides scalable computing capacity in the cloud. It is a service that allows users to launch virtual servers, known as instances, on which they can run applications and services. EC2 instances are highly customizable and can be configured to meet specific requirements,
 which provide on demand scalable, felxibale and resizable VM over the internet.
  compute capacity in cloud. it is virtual server.
 
@@ -459,4 +461,3 @@ exampple: web applications, microservices architectures, high-availability syste
 3. Stopping 
 4. Terminating
 5. Rebooting
-    
