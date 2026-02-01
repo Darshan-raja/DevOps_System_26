@@ -3,13 +3,10 @@
 ## Repository Structure
 
 ```text
-DevOps_RDMP
+DevOps_RDMP 2026
 ├── DevOps_Interview        # Interview Q&A
 ├── DevOps_Notes            # Theory and notes
 │   └── AWS_Partical
 │       └── README.md       # AWS hands-on notes
 ├── DevOps_Project_26       # Real-world projects
 └── Linux_practice          # Linux commands & labs
-
-
-<h1 align="center">Hi 👋, I'm Darshan DG</h1>
