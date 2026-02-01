@@ -461,3 +461,7 @@ exampple: web applications, microservices architectures, high-availability syste
 3. Stopping 
 4. Terminating
 5. Rebooting
+# Pricing Models of EC2 Instances:
+1. On-Demand Instances
+2. Reserved Instances
+3. Spot Instances
