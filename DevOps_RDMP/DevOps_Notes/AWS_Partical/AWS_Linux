@@ -465,3 +465,10 @@ exampple: web applications, microservices architectures, high-availability syste
 1. On-Demand Instances
 2. Reserved Instances
 3. Spot Instances
+4. Savings Plans
+1. On-Demand Instances: Pay for compute capacity by the hour or second with no long-term commitments.
+2. Reserved Instances: Make a one-time payment for a significant discount on hourly rates for a
+specific instance type in a specific region.
+3. Spot Instances: Bid for unused EC2 capacity at a discounted rate, ideal for flexible
+workloads.
+4. Savings Plans: Commit to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term in exchange for lower rates.
