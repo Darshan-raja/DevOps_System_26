@@ -471,4 +471,28 @@ exampple: web applications, microservices architectures, high-availability syste
 specific instance type in a specific region.
 3. Spot Instances: Bid for unused EC2 capacity at a discounted rate, ideal for flexible
 workloads.
-4. Savings Plans: Commit to a consistent amount of usage (measured in $/hour) for a 1- or 3-year term in e
+
+
+S3: Simple Storage Service
+
+
+
+
+--> #VPC (Virtual Private Cloud)
+what is VPC?
+Virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account. It enables you to launch AWS resources, such as EC2 instances, into a virtual network that you define. VPC provides complete control over your virtual networking environment, including selection of IP address range, creation of subnets, and configuration of route tables and network gateways.
+example: web applications, databases, and other resources that require secure and isolated networking.
+# IP Addressing
+IP address range: 10.0.0.0/16 - 10.255.255.255 first octet will be networking portion and last three octet will be host portion. each octet having 8 bits total 32 bits. total numbers 256^4 = 4,294,967,296 IP address.
+
+IP addressing types:
+1. class A the range is 0.0.0.0 to 127.255.255.255 used for large network
+2. class B the range is 128.0.0.0 to 191.255.255.255 used for medium network
+3. class C the range is 192.0.0.0 to 223.255.255.255 used for small network
+4. class D the range is 224.0.0.0 to 239.255.255.255 used for multicasting
+5. class E the range is 240.0.0.0 to 255.255.255.255 used for experimental addresses
+
+# Subnet
+A subnet is a range of IP addresses within a VPC. It is a smaller portion of the VPC's IP address range. Subnets are used to divide the VPC into smaller, more manageable networks. Each subnet must be in a specific Availability Zone, which is a physical location where AWS data centers are located. Subnets can be public or private, and they can be used to host EC2 instances, RDS databases, and other AWS resources.
+example: web servers, databases, and other resources that require secure and isolated networking.
+# Availability Zone
