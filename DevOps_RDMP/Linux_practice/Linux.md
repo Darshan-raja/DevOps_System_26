@@ -12,7 +12,7 @@ EC2 type T2 micro instance type instance is also viratul server
 
 • Accelerated Computing: For specialized processing (e.g., GPUs)
 
-when come to the security group 
+when come to the security group
 
 ** linux command for devops**
 # Linux Commands for DevOps (Fresher-Friendly Guide)
