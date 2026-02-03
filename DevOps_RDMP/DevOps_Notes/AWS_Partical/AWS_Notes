@@ -483,3 +483,7 @@ IP address range: 10.0.0.0/16 - 10.255.255.255 first octet will be networking po
 
 IP addressing types:
 1. class A the range is 0.0.0.0 to 127.255.255.255 used for large network
+2. class B the range is 128.0.0.0 to 191.255.255.255 used for medium network
+3. class C the range is 192.0.0.0 to 223.255.255.255 used for small network 
+
+
