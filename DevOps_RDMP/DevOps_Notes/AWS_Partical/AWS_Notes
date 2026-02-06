@@ -496,3 +496,8 @@ IP addressing types:
 A subnet is a range of IP addresses within a VPC. It is a smaller portion of the VPC's IP address range. Subnets are used to divide the VPC into smaller, more manageable networks. Each subnet must be in a specific Availability Zone, which is a physical location where AWS data centers are located. Subnets can be public or private, and they can be used to host EC2 instances, RDS databases, and other AWS resources.
 example: web servers, databases, and other resources that require secure and isolated networking.
 # Availability Zone
+    1
+
+
+
+lambda: serverless compute service that lets you run code without provisioning or managing servers.
