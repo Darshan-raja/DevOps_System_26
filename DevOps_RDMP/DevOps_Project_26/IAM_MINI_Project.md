@@ -319,8 +319,8 @@ creating user-2
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Here I had given permission to user-1 
 <img width="1532" height="706" alt="user1per" src="https://github.com/user-attachments/assets/154a40f4-45f5-4343-b44c-61080b074b97" />
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Here I had given permission to a group members
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Here I had given permission to a group members
 <img width="1551" height="711" alt="groupperm" src="https://github.com/user-attachments/assets/e97df6fd-2a1f-47c1-978f-da6b177acdbd" />
 
 
