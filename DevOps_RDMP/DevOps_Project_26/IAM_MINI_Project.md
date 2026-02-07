@@ -2,6 +2,7 @@
 
 Project Title:
 Design and Implementation of AWS IAM Access Control Architecture
+<img width="1024" height="1536" alt="iam" src="https://github.com/user-attachments/assets/b5dfa12c-8da6-4550-9529-a7afe0a5db05" />
 
 Project Description:
 In this project, I designed and implemented a secure and scalable AWS Identity and Access Management (IAM) architecture following AWS best practices and the principle of least privilege.
