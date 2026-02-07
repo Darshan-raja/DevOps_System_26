@@ -310,3 +310,17 @@ Roles = temporary access
 SCPs ≠ IAM policies
 
 IAM is global
+
+creating user-1
+<img width="1899" height="708" alt="user1" src="https://github.com/user-attachments/assets/05edbade-1738-4a1e-9246-9ed5ce4ce394" />
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+creating user-2
+<img width="1551" height="708" alt="user2" src="https://github.com/user-attachments/assets/09c8f917-3a0e-4290-ab84-74be945cbc51" />
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# here i had given user-1 
+<img width="1532" height="706" alt="user1per" src="https://github.com/user-attachments/assets/154a40f4-45f5-4343-b44c-61080b074b97" />
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+# here i had given permission to a group members
+<img width="1551" height="711" alt="groupperm" src="https://github.com/user-attachments/assets/e97df6fd-2a1f-47c1-978f-da6b177acdbd" />
+
+
