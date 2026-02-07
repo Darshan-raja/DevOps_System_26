@@ -317,10 +317,10 @@ creating user-1
 creating user-2
 <img width="1551" height="708" alt="user2" src="https://github.com/user-attachments/assets/09c8f917-3a0e-4290-ab84-74be945cbc51" />
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# here i had given user-1 
+# Here I had given permission to user-1 
 <img width="1532" height="706" alt="user1per" src="https://github.com/user-attachments/assets/154a40f4-45f5-4343-b44c-61080b074b97" />
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-# here i had given permission to a group members
+# Here I had given permission to a group members
 <img width="1551" height="711" alt="groupperm" src="https://github.com/user-attachments/assets/e97df6fd-2a1f-47c1-978f-da6b177acdbd" />
 
 
