@@ -501,3 +501,25 @@ example: web servers, databases, and other resources that require secure and iso
 
 
 lambda: serverless compute service that lets you run code without provisioning or managing servers.
+
+
+
+
+
+--> IAM (Identity and Access Management)
+what is IAM?
+Identity and Access Management (IAM) is a web service that helps you securely control access to AWS services and resources for your users. With IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources.
+example: controlling who can access your
+
+IAM services include:
+1. Users: Individual identities with specific permissions to access AWS resources.
+2. Groups: Collections of users that can be managed together, allowing you to assign permissions to multiple users at once.
+3. Roles: AWS identities with specific permissions that can be assumed by users or services, allowing them to access AWS resources without needing long-term credentials.
+4. Policies: Documents that define permissions for users, groups, and roles. Policies specify what actions are allowed or denied on specific AWS resources.
+
+IAM is what type of service in aws IAM is a global service in AWS, meaning it is not tied to any specific region. IAM resources, such as users, groups, roles, and policies, are available across all AWS regions. This allows you to manage access to AWS resources consistently regardless of where those resources are located.
+
+
+MFA (Multi-Factor Authentication) is an additional layer of security for your AWS account. It requires users to provide two or more forms of authentication before they can access AWS resources. This typically includes something the user knows (like a password) and something the user has (like a physical device or a mobile app that generates a one-time code). MFA helps protect your AWS account from unauthorized access, even if a user's password is compromised. 
+
+MFA username + password + one time code (from device or app) = access to AWS resources.
