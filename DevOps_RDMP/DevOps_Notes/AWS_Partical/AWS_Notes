@@ -311,6 +311,42 @@ Amazon Web Services (AWS) is a cloud Services platform which allow users to acce
 **Route53**: Domain Name System (DNS) Web Service
 **CloudWatch**: Monitoring and Observability Service
 
+# VPC infrastructure (basic)
+Region: us-east-1
+
+CIDR plan:
+- VPC: 10.0.0.0/16
+- Public subnet A (us-east-1a): 10.0.1.0/24
+- Public subnet B (us-east-1b): 10.0.2.0/24
+
+Architecture (public only):
+
+```
+                Internet
+                    |
+                [IGW]
+                    |
+          +------+------+
+          |  VPC 10.0.0.0/16
+          |  (Route Table: 0.0.0.0/0 -> IGW)
+          |
+  +-----+-----+  +-----+-----+
+  | Public A  |  | Public B  |
+  | 10.0.1.0/24|  |10.0.2.0/24|
+  | us-east-1a|  | us-east-1b|
+  +-----------+  +-----------+
+```
+
+What each part does:
+- VPC: private network boundary for your AWS resources.
+- Internet Gateway (IGW): allows internet access for public subnets.
+- Public subnets: each in a different AZ for high availability.
+- Route table: sends all outbound internet traffic (0.0.0.0/0) to IGW.
+
+Notes:
+- Associate the public route table with both public subnets.
+- Any EC2 in these subnets needs a public IP to be reachable from the internet.
+
 --> EC2 compenents:
 1. AMI (Amazon Machine Image)
 2. Instance Types
@@ -482,6 +518,11 @@ S3: Simple Storage Service
 what is VPC?
 Virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account. It enables you to launch AWS resources, such as EC2 instances, into a virtual network that you define. VPC provides complete control over your virtual networking environment, including selection of IP address range, creation of subnets, and configuration of route tables and network gateways.
 example: web applications, databases, and other resources that require secure and isolated networking.
+
+
+VPC is a what type of service in a AWS?
+VPC is a global service in AWS, meaning it is not tied to any specific region. VPC resources, such as subnets, route tables, and security groups, are available across all AWS regions. This allows you to manage your virtual networking environment consistently regardless of where your AWS resources are
+
 # IP Addressing
 IP address range: 10.0.0.0/16 - 10.255.255.255 first octet will be networking portion and last three octet will be host portion. each octet having 8 bits total 32 bits. total numbers 256^4 = 4,294,967,296 IP address.
 
