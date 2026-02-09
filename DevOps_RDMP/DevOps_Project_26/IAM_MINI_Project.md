@@ -87,7 +87,6 @@ IAM Access Analyzer helps identify resources that are publicly accessible or sha
 Answer:
 By using IAM Credential Reports, which show password usage, MFA status, and access key rotation details.
 
-
 1️⃣ How does AWS evaluate IAM permissions?
 
 Answer:

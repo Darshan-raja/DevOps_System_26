@@ -1,0 +1,16 @@
+Web server hosting the application
+==============================
+
+The web server hosting the application is a critical component of the DevOps project. It is responsible for serving the application to users and handling incoming requests. The web server should be configured to handle a large number of concurrent requests and should be able to scale horizontally to accommodate increased traffic.
+
+==============================
+The web server should be configured to use a load balancer to distribute incoming traffic across multiple instances of the application. This will help to ensure that the application is always available and can handle increased traffic.
+
+==============================
+The web server should be configured to use a caching mechanism to reduce the load on the application and improve performance. This can be achieved by using a caching layer such as Redis or Memcached to store frequently accessed data.
+
+==============================
+The web server should be configured to use a content delivery network (CDN) to distribute static content such as images and videos. This will help to reduce the load on the application and improve performance.
+
+==============================
+Using the AWS Serives EC2,S3,VPC/
