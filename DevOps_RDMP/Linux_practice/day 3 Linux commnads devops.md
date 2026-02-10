@@ -549,3 +549,8 @@ chgrp groupname filename
 ```
 
 Change file group.
+
+--> FILE MANAGEMENT COMMNADS
+
+1. tar -cvf archive.tar file1 file2 file3
+2. "-" standard input/output "c" create "v" verbose "f" file name
