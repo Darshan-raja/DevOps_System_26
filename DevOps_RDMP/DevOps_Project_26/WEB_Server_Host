@@ -13,4 +13,5 @@ The web server should be configured to use a caching mechanism to reduce the loa
 The web server should be configured to use a content delivery network (CDN) to distribute static content such as images and videos. This will help to reduce the load on the application and improve performance.
 
 ==============================
-Using the AWS Serives EC2,S3,VPC/
+Using the AWS Serives EC2,S3,VPC
+ aws
