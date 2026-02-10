@@ -556,7 +556,15 @@ Change file group.
  "-" standard input/output "c" create "v" verbose "f" file name
 2. extract tar -xvf archive.tar
    "x" extract "v" verbose "f" file name which helps to extract the all achived file
-3. cp -r source_directory destination_directory
+3. zip archive.zip file1 file2 file3
+    archive compares the files and compresses the files
+4. cp -r source_directory destination_directory
+5. unzip archive.zip filename 
+6. gzip -d filename.gz 
+
+
+
+
 4. mv source_directory destination_directory
 5. rm -r directory_name
 6. mkdir directory_name
