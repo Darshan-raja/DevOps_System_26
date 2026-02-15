@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shraddha Supremacy 👑 | The Legend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sunflower: #FFD93D;
+            --hot-pink: #FF69B4;
+            --purple: #9B59B6;
+            --orange: #FF6B35;
+            --cream: #FFF8DC;
+            --dark: #1a1a2e;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background: var(--cream);
+            overflow-x: hidden;
+            cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐕</text></svg>") 16 0, auto;
+        }
+
+        /* Chaos Mode Toggle */
+        .chaos-btn {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            z-index: 9999;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400%;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            animation: rainbow 3s linear infinite;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 400% 50%; }
+        }
+
+        /* Flying Elements */
+        .flying-chaos {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .flying-item {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: flyAcross 8s linear infinite;
+            opacity: 0.8;
+        }
+
+        @keyframes flyAcross {
+            0% { transform: translateX(-100px) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateX(calc(100vw + 100px)) rotate(720deg); opacity: 0; }
+        }
+
+        /* Navigation - Meme Style */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, var(--hot-pink), var(--purple), var(--orange));
+            z-index: 1000;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-family: 'Bangers', cursive;
+            font-size: 2rem;
+            color: white;
+            text-shadow: 3px 3px 0 var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-shadow: 2px 2px 0 var(--dark);
+            transition: transform 0.3s;
+        }
+
+        .nav-links a:hover {
+            transform: scale(1.2) rotate(-5deg);
+        }
+
+        /* Hero Section - MEME ENERGY */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 5%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, var(--hot-pink) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            animation: movePattern 20s linear infinite;
+        }
+
+        @keyframes movePattern {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(60px) translateY(60px); }
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-name {
+            font-family: 'Bangers', cursive;
+            font-size: 6rem;
+            color: var(--sunflower);
+            text-shadow: 5px 5px 0 var(--dark), 10px 10px 0 var(--hot-pink);
+            animation: bounceIn 1s ease-out, wiggle 2s ease-in-out infinite;
+            letter-spacing: 5px;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+        }
+
+        .hero-subtitle {
+            font-family: 'Bangers', cursive;
+            font-size: 2rem;
+            color: white;
+            margin: 1rem 0;
+            text-shadow: 2px 2px 0 var(--dark);
+        }
+
+        .hero-meme-text {
+            font-size: 1.5rem;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            display: inline-block;
+        }
+
+        .hero-emojis {
+            font-size: 4rem;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .crown {
+            font-size: 5rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Meme Cards Section */
+        .meme-section {
+            padding: 5rem 5%;
+            background: var(--cream);
+        }
+
+        .section-title {
+            font-family: 'Bangers', cursive;
+            font-size: 3.5rem;
+            text-align: center;
+            color: var(--dark);
+            text-shadow: 3px 3px 0 var(--sunflower);
+            margin-bottom: 3rem;
+        }
+
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .meme-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 10px 10px 0 var(--dark);
+            transition: transform 0.3s;
+            border: 4px solid var(--dark);
+        }
+
+        .meme-card:hover {
+            transform: rotate(-3deg) scale(1.05);
+        }
+
+        .meme-card-header {
+            background: linear-gradient(45deg, var(--hot-pink), var(--orange));
+            padding: 1rem;
+            font-family: 'Bangers', cursive;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        .meme-card-body {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .meme-emoji {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .meme-card-body h3 {
+            font-family: 'Bangers', cursive;
+            font-size: 1.8rem;
+            color: var(--purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .meme-card-body p {
+            font-size: 1.1rem;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Corporate Survival Section */
+        .corporate-hell {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+        }
+
+        .corporate-hell .section-title {
+            color: var(--sunflower);
+            text-shadow: 3px 3px 0 var(--hot-pink);
+        }
+
+        .survival-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+
+        .survival-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid var(--sunflower);
+            transition: all 0.3s;
+        }
+
+        .survival-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+            box-shadow: 0 0 30px var(--sunflower);
+        }
+
+        .survival-card .big-text {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            color: var(--sunflower);
+        }
+
+        .survival-card .label {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Dog Lover Section */
+        .dog-lover {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, var(--sunflower), var(--orange));
+        }
+
+        .dog-lover .section-title {
+            color: var(--dark);
+            text-shadow: 3px 3px 0 white;
+        }
+
+        .dog-facts {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 10px 10px 0 var(--dark);
+            border: 4px solid var(--dark);
+        }
+
+        .dog-fact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-bottom: 3px dashed var(--sunflower);
+            transition: transform 0.3s;
+        }
+
+        .dog-fact-item:hover {
+            transform: translateX(10px);
+            background: var(--cream);
+        }
+
+        .dog-fact-item:last-child {
+            border-bottom: none;
+        }
+
+        .dog-fact-item .emoji {
+            font-size: 3rem;
+        }
+
+        .dog-fact-item .text {
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+
+        .dog-fact-item .text strong {
+            color: var(--hot-pink);
+        }
+
+        /* Shraddha Appreciation Zone */
+        .appreciation {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, var(--hot-pink), var(--purple));
+            text-align: center;
+        }
+
+        .appreciation .section-title {
+            color: white;
+            text-shadow: 3px 3px 0 var(--dark);
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+
+        .reason-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 5px 5px 0 var(--dark);
+            transition: transform 0.3s;
+            border: 3px solid var(--dark);
+        }
+
+        .reason-card:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .reason-card .num {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            color: var(--hot-pink);
+        }
+
+        .reason-card p {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-top: 0.5rem;
+        }
+
+        /* Quote Generator */
+        .quote-section {
+            padding: 5rem 5%;
+            background: var(--dark);
+            text-align: center;
+        }
+
+        .quote-box {
+            max-width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(45deg, var(--hot-pink), var(--purple));
+            padding: 3rem;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '💬';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4rem;
+        }
+
+        .quote-text {
+            font-family: 'Bangers', cursive;
+            font-size: 2rem;
+            color: white;
+            line-height: 1.5;
+        }
+
+        .quote-btn {
+            margin-top: 2rem;
+            background: var(--sunflower);
+            color: var(--dark);
+            padding: 1rem 2.5rem;
+            border: 4px solid var(--dark);
+            border-radius: 50px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 5px 5px 0 var(--dark);
+        }
+
+        .quote-btn:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 var(--dark);
+        }
+
+        /* Meme Gallery */
+        .meme-gallery {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .meme-template {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 8px 8px 0 var(--dark);
+            border: 4px solid var(--dark);
+        }
+
+        .meme-template-header {
+            background: var(--dark);
+            color: white;
+            padding: 0.8rem;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .meme-template-body {
+            padding: 2rem;
+            text-align: center;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .meme-template-body .top-text,
+        .meme-template-body .bottom-text {
+            font-family: 'Bangers', cursive;
+            font-size: 1.5rem;
+            color: var(--dark);
+            text-transform: uppercase;
+        }
+
+        .meme-template-body .meme-img {
+            font-size: 5rem;
+            margin: 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 5%;
+            background: var(--dark);
+            color: white;
+            text-align: center;
+        }
+
+        .footer-message {
+            font-family: 'Bangers', cursive;
+            font-size: 2.5rem;
+            color: var(--sunflower);
+            text-shadow: 2px 2px 0 var(--hot-pink);
+            margin-bottom: 1rem;
+        }
+
+        .footer-emojis {
+            font-size: 3rem;
+            margin: 1rem 0;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .footer-note {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-name {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .chaos-btn {
+                top: 80px;
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+        }
+
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: var(--sunflower);
+            top: -10px;
+            animation: confettiFall 5s linear infinite;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* Sparkle cursor trail */
+        .sparkle {
+            position: fixed;
+            pointer-events: none;
+            font-size: 1.5rem;
+            animation: sparkleAnim 1s forwards;
+            z-index: 9999;
+        }
+
+        @keyframes sparkleAnim {
+            0% { opacity: 1; transform: scale(1) translateY(0); }
+            100% { opacity: 0; transform: scale(0) translateY(-30px); }
+        }
+
+        /* Glowing text */
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--hot-pink), 0 0 20px var(--hot-pink); }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--sunflower), 0 0 40px var(--sunflower); }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Flying Chaos Elements -->
+    <div class="flying-chaos" id="flyingChaos">
+        <!-- Populated by JS -->
+    </div>
+
+    <!-- Chaos Mode Button -->
+    <button class="chaos-btn" onclick="toggleChaos()">🎉 CHAOS MODE</button>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">👑 SHRADDHA SUPREMACY</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#corporate">Corporate Life</a></li>
+            <li><a href="#appreciation">Appreciation</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="crown">👑</div>
+            <h1 class="hero-name glow">SHRADDHA</h1>
+            <p class="hero-subtitle">THE LEGEND. THE ICON. THE MOMENT.</p>
+            <div class="hero-meme-text">
+                HR Intern by day 💼 | Dog Simp by night 🐕 | Sunflower in human form 🌻
+            </div>
+            <div style="margin-top: 2rem;">
+                <span style="font-size: 4rem;">🐕</span>
+                <span style="font-size: 4rem;">🌻</span>
+                <span style="font-size: 4rem;">💪</span>
+            </div>
+            <p style="font-size: 1.5rem; margin-top: 2rem; background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 10px;">
+                "She came, she saw, she pet every dog in sight"
+            </p>
+        </div>
+    </section>
+
+    <!-- Meme Facts About Shraddha -->
+    <section class="meme-section" id="facts">
+        <h2 class="section-title">📢 SHRADDHA FACTS (100% REAL)</h2>
+        <div class="meme-grid">
+            <div class="meme-card reveal">
+                <div class="meme-card-header">FACT #1</div>
+                <div class="meme-card-body">
+                    <div class="meme-emoji">🐕</div>
+                    <h3>Dog Magnet</h3>
+                    <p>Every dog within a 5km radius immediately detects Shraddha's presence and demands pets. Scientists are still studying this phenomenon.</p>
+                </div>
+            </div>
+            <div class="meme-card reveal">
+                <div class="meme-card-header">FACT #2</div>
+                <div class="meme-card-body">
+                    <div class="meme-emoji">🌻</div>
+                    <h3>Sunflower Vibes</h3>
+                    <p>Shraddha doesn't need sunshine. SHE IS THE SUNSHINE. Sunflowers actually turn towards HER, not the sun.</p>
+                </div>
+            </div>
+            <div class="meme-card reveal">
+                <div class="meme-card-header">FACT #3</div>
+                <div class="meme-card-body">
+                    <div class="meme-emoji">💼</div>
+                    <h3>Corporate Warrior</h3>
+                    <p>Monday meetings fear Shraddha. She walks into Excel sheets like she owns them. HR has never been this iconic.</p>
+                </div>
+            </div>
+            <div class="meme-card reveal">
+                <div class="meme-card-header">FACT #4</div>
+                <div class="meme-card-body">
+                    <div class="meme-emoji">⚔️</div>
+                    <h3>Battle Mode: ON</h3>
+                    <p>Life tried to give Shraddha lemons. She made a PowerPoint presentation about why lemons are problematic and demanded oranges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Survival -->
+    <section class="corporate-hell" id="corporate">
+        <h2 class="section-title">💀 SHRADDHA VS CORPORATE LIFE 💀</h2>
+        <p style="text-align: center; font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9;">
+            "I didn't choose the HR life, the HR life chose me... during campus placement"
+        </p>
+        <div class="survival-grid">
+            <div class="survival-card reveal">
+                <div class="big-text">∞</div>
+                <div class="label">Meetings Survived</div>
+            </div>
+            <div class="survival-card reveal">
+                <div class="big-text">9999</div>
+                <div class="label">Emails Ignored Successfully</div>
+            </div>
+            <div class="survival-card reveal">
+                <div class="big-text">☕</div>
+                <div class="label">Coffee Cups = Will to Live</div>
+            </div>
+            <div class="survival-card reveal">
+                <div class="big-text">0</div>
+                <div class="label">Days Without Wanting to Quit</div>
+            </div>
+            <div class="survival-card reveal">
+                <div class="big-text">💯</div>
+                <div class="label">Fake Smiles Mastered</div>
+            </div>
+            <div class="survival-card reveal">
+                <div class="big-text">1</div>
+                <div class="label">Legend (That's Shraddha)</div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 3rem; font-size: 1.5rem;">
+            "Per my last email" = "Can you read?" 📧🔥
+        </p>
+    </section>
+
+    <!-- Dog Lover Section -->
+    <section class="dog-lover">
+        <h2 class="section-title">🐕 SHRADDHA'S DOG OBSESSION 🐕</h2>
+        <div class="dog-facts">
+            <div class="dog-fact-item reveal">
+                <span class="emoji">🐶</span>
+                <span class="text">Shraddha can spot a dog from <strong>3 kilometers away</strong>. Her peripheral vision is only for dogs.</span>
+            </div>
+            <div class="dog-fact-item reveal">
+                <span class="emoji">📱</span>
+                <span class="text">Her phone gallery is <strong>99% dog pics</strong> and 1% accidental screenshots.</span>
+            </div>
+            <div class="dog-fact-item reveal">
+                <span class="emoji">💬</span>
+                <span class="text">She talks to dogs in a <strong>special voice</strong> that humans can never replicate.</span>
+            </div>
+            <div class="dog-fact-item reveal">
+                <span class="emoji">🏃‍♀️</span>
+                <span class="text">Will <strong>cross 6 lanes of traffic</strong> to pet a good boy. Safety who?</span>
+            </div>
+            <div class="dog-fact-item reveal">
+                <span class="emoji">💕</span>
+                <span class="text">"I just want to be <strong>half as happy</strong> as a dog seeing its owner" - Shraddha, probably</span>
+            </div>
+            <div class="dog-fact-item reveal">
+                <span class="emoji">🌟</span>
+                <span class="text">Dogs don't just like Shraddha. Dogs <strong>CHOOSE</strong> Shraddha.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appreciation Zone -->
+    <section class="appreciation" id="appreciation">
+        <h2 class="section-title">⭐ WHY SHRADDHA IS AMAZING ⭐</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+            (This is legally required to acknowledge her greatness)
+        </p>
+        <div class="reasons-grid">
+            <div class="reason-card reveal">
+                <div class="num">#1</div>
+                <p>She actually laughs at your jokes (even the bad ones)</p>
+            </div>
+            <div class="reason-card reveal">
+                <div class="num">#2</div>
+                <p>Radiates pure sunflower energy 24/7</p>
+            </div>
+            <div class="reason-card reveal">
+                <div class="num">#3</div>
+                <p>Survives corporate life with style</p>
+            </div>
+            <div class="reason-card reveal">
+                <div class="num">#4</div>
+                <p>Never met a dog she didn't love</p>
+            </div>
+            <div class="reason-card reveal">
+                <div class="num">#5</div>
+                <p>Turns struggles into strength</p>
+            </div>
+            <div class="reason-card reveal">
+                <div class="num">#6</div>
+                <p>Simply iconic in every way</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shraddha Quote Generator -->
+    <section class="quote-section">
+        <h2 class="section-title" style="color: var(--sunflower);">💬 SHRADDHA MOOD GENERATOR 💬</h2>
+        <div class="quote-box">
+            <p class="quote-text" id="shraddhaQuote">
+                "I'm not lazy, I'm on energy-saving mode" 😴
+            </p>
+            <button class="quote-btn" onclick="generateQuote()">
+                🎲 GENERATE MOOD
+            </button>
+        </div>
+    </section>
+
+    <!-- Meme Gallery -->
+    <section class="meme-gallery">
+        <h2 class="section-title">🖼️ SHRADDHA MEME TEMPLATES 🖼️</h2>
+        <div class="gallery-grid">
+            <div class="meme-template reveal">
+                <div class="meme-template-header">Monday Energy</div>
+                <div class="meme-template-body">
+                    <span class="top-text">Me: I'll be productive today</span>
+                    <span class="meme-img">😴</span>
+                    <span class="bottom-text">Also me at 11 AM</span>
+                </div>
+            </div>
+            <div class="meme-template reveal">
+                <div class="meme-template-header">Dog Spotted</div>
+                <div class="meme-template-body">
+                    <span class="top-text">Important meeting happening</span>
+                    <span class="meme-img">🐕</span>
+                    <span class="bottom-text">Shraddha: OMG DOGGO!!</span>
+                </div>
+            </div>
+            <div class="meme-template reveal">
+                <div class="meme-template-header">Corporate Mood</div>
+                <div class="meme-template-body">
+                    <span class="top-text">"As per my last email"</span>
+                    <span class="meme-img">😤</span>
+                    <span class="bottom-text">Translation: READ IT AGAIN</span>
+                </div>
+            </div>
+            <div class="meme-template reveal">
+                <div class="meme-template-header">Life Goals</div>
+                <div class="meme-template-body">
+                    <span class="top-text">Career? Love? Money?</span>
+                    <span class="meme-img">🌻🐕</span>
+                    <span class="bottom-text">Nah, just dogs & sunflowers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-message">SHRADDHA, YOU'RE A WHOLE LEGEND! 💛</div>
+        <div class="footer-emojis">🐕 🌻 👑 ⭐ 💪</div>
+        <p style="font-size: 1.2rem;">
+            Keep being awesome. Keep petting dogs. Keep shining bright.
+        </p>
+        <p style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--sunflower);">
+            "She believed she could, so she pet the dog first, then she did it" 🐕✨
+        </p>
+        <p class="footer-note">
+            Made with 💛 to make Shraddha smile | You deserve all the good things! 🌻
+        </p>
+    </footer>
+
+    <script>
+        // Shraddha Quotes
+        const quotes = [
+            "I'm not lazy, I'm on energy-saving mode 😴",
+            "My Monday motivation? Knowing there's dogs to pet 🐕",
+            "I survived another meeting that could've been an email 📧",
+            "Corporate wants me to care. Bold assumption 💼",
+            "I don't need therapy, I need a puppy cuddle session 🐶",
+            "Plot twist: The sunflower field is my happy place 🌻",
+            "Still waiting for my 'adult' manual. Where's the return policy? 📖",
+            "HR intern by title, dog appreciator by passion 🐕‍🦺",
+            "On Wednesdays, we mentally quit our jobs 👋",
+            "Keep your drama, I have enough Excel sheets 📊",
+            "My resume says 'team player' but I really just want snacks 🍪",
+            "I'm not stressed, I'm just... aggressively existing ✨",
+            "Sunflowers turn to the sun, I turn to the nearest dog 🌻🐕",
+            "Life update: Still surviving, might delete later 🙃",
+            "5PM me is a completely different person than 9AM me 🌙"
+        ];
+
+        function generateQuote() {
+            const quoteEl = document.getElementById('shraddhaQuote');
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            quoteEl.style.animation = 'none';
+            quoteEl.offsetHeight;
+            quoteEl.style.animation = 'bounceIn 0.5s ease-out';
+            quoteEl.textContent = `"${randomQuote}"`;
+        }
+
+        // Flying elements
+        const flyingItems = ['🐕', '🌻', '⭐', '💛', '🐶', '👑', '✨', '🌸'];
+        const flyingChaos = document.getElementById('flyingChaos');
+
+        function createFlyingItem() {
+            const item = document.createElement('span');
+            item.classList.add('flying-item');
+            item.textContent = flyingItems[Math.floor(Math.random() * flyingItems.length)];
+            item.style.top = Math.random() * 80 + 10 + '%';
+            item.style.animationDuration = Math.random() * 5 + 5 + 's';
+            item.style.animationDelay = Math.random() * 2 + 's';
+            flyingChaos.appendChild(item);
+
+            setTimeout(() => item.remove(), 15000);
+        }
+
+        setInterval(createFlyingItem, 2000);
+
+        // Chaos Mode
+        let chaosMode = false;
+        function toggleChaos() {
+            chaosMode = !chaosMode;
+            if (chaosMode) {
+                document.body.style.animation = 'rainbow 1s linear infinite';
+                for (let i = 0; i < 50; i++) {
+                    setTimeout(createConfetti, i * 50);
+                }
+            } else {
+                document.body.style.animation = 'none';
+            }
+        }
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 5000);
+        }
+
+        // Sparkle cursor trail
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.9) {
+                const sparkle = document.createElement('span');
+                sparkle.classList.add('sparkle');
+                sparkle.textContent = ['✨', '⭐', '💛', '🌻'][Math.floor(Math.random() * 4)];
+                sparkle.style.left = e.clientX + 'px';
+                sparkle.style.top = e.clientY + 'px';
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        });
+
+        // Click effect
+        document.addEventListener('click', (e) => {
+            const emojis = ['🐕', '🌻', '💛', '⭐', '✨'];
+            for (let i = 0; i < 5; i++) {
+                const emoji = document.createElement('span');
+                emoji.style.position = 'fixed';
+                emoji.style.left = e.clientX + 'px';
+                emoji.style.top = e.clientY + 'px';
+                emoji.style.fontSize = '2rem';
+                emoji.style.pointerEvents = 'none';
+                emoji.style.zIndex = '9999';
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.animation = `explode${i} 1s forwards`;
+                document.body.appendChild(emoji);
+                
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes explode${i} {
+                        0% { transform: translate(0, 0) scale(1); opacity: 1; }
+                        100% { transform: translate(${(Math.random() - 0.5) * 200}px, ${(Math.random() - 0.5) * 200}px) scale(0); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                setTimeout(() => {
+                    emoji.remove();
+                    style.remove();
+                }, 1000);
+            }
+        });
+
+        // Scroll reveal
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 150;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Konami code easter egg
+        let konamiCode = [];
+        const secretCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.key);
+            konamiCode = konamiCode.slice(-10);
+            
+            if (konamiCode.join(',') === secretCode.join(',')) {
+                alert('🎉 SECRET UNLOCKED! 🎉\n\nShraddha is officially the coolest person ever!\n\n🐕🌻👑');
+                for (let i = 0; i < 100; i++) {
+                    setTimeout(createConfetti, i * 30);
+                }
+            }
+        });
+
+        console.log('%c🐕 SHRADDHA SUPREMACY 🐕', 'font-size: 30px; color: #FF69B4; font-weight: bold;');
+        console.log('%cYou found the console! You must be a tech person. Shraddha approves. 👑', 'font-size: 14px; color: #FFD93D;');
+    </script>
+</body>
+</html>
