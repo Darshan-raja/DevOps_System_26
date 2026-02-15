@@ -510,6 +510,9 @@ workloads.
 
 
 S3: Simple Storage Service
+is an object storage service that provides scalable and secure storage for a wide range of data types. S3 allows you to store and retrieve any amount of data from anywhere on the web. It is designed for durability, availability, and performance, making it suitable for a variety of use cases, including backup and restore, archiving, big data analytics, and content distribution.
+example: storing and retrieving data for websites, mobile applications, backup and restore, archiving, big data analytics, and content distribution.
+
 
 
 
