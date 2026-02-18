@@ -567,3 +567,4 @@ IAM is what type of service in aws IAM is a global service in AWS, meaning it is
 MFA (Multi-Factor Authentication) is an additional layer of security for your AWS account. It requires users to provide two or more forms of authentication before they can access AWS resources. This typically includes something the user knows (like a password) and something the user has (like a physical device or a mobile app that generates a one-time code). MFA helps protect your AWS account from unauthorized access, even if a user's password is compromised. 
 
 MFA username + password + one time code (from device or app) = access to AWS resources.
+
