@@ -1,0 +1,10 @@
+how to create AGS (auto sacaling group) in AWS
+ 1. create a VPC(virtual private cloud)
+    --> Resources to create (VPC and more)
+    --> Number of Availability Zones (AZs) (2)
+    --> Number of public subnets (2)
+    --> Number of private subnets (2)
+    --> NAT gateways ($) - updated (zonal ) , Nat gateway (in 1 AZ)
+    --> Internet gateway (IGW) (1)
+    --> Route table (1)
+    --> Network connections (3)
