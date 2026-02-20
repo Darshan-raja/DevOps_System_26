@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram name="AWS ASG Architecture" id="asg-architecture">
+        <mxGraphModel dx="1392" dy="1916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="aws-cloud" value="AWS Cloud" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="30" width="1000" height="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpc" value="VPC (Virtual Private Cloud)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=12;strokeWidth=3;perimeterSpacing=6;opacity=60;shadow=0;rotation=0;gradientColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="83" width="942" height="706" as="geometry"/>
+                </mxCell>
+                <mxCell id="igw" value="Internet Gateway&#xa;(IGW)" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#8C4FFF;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="85" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="az1" value="Availability Zone 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="170" width="400" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="az2" value="Availability Zone 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="170" width="400" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-subnet-1" value="Public Subnet 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="200" width="360" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-subnet-2" value="Public Subnet 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="200" width="360" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="private-subnet-1" value="Private Subnet 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="400" width="360" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="private-subnet-2" value="Private Subnet 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="400" width="360" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="nat-gw" value="NAT Gateway" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.nat_gateway;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#8C4FFF;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="280" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="alb" value="Application Load Balancer&#xa;(ALB)" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.application_load_balancer;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#8C4FFF;strokeColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="250" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="target-group" value="Target Group" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;fontStyle=1;dashed=1;dashPattern=5 5;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="450" width="640" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="asg-box" value="Auto Scaling Group (ASG)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="480" width="600" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec2-1" value="EC2&#xa;Instance" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#ED7100;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="540" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec2-2" value="EC2&#xa;Instance" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#ED7100;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="540" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec2-3" value="EC2&#xa;Instance" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#ED7100;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="540" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ami" value="AMI&#xa;(Launch Template)" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ami;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#ED7100;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="630" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="users" value="Users" style="shape=mxgraph.aws4.users;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=#232F3D;strokeColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="-20" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow1" value="" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="users" target="igw" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow2" value="" style="endArrow=classic;startArrow=classic;html=1;strokeWidth=2;strokeColor=#0066CC;" parent="1" source="igw" target="alb" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow3" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FF6600;" parent="1" source="alb" target="ec2-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow4" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FF6600;" parent="1" source="alb" target="ec2-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow5" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FF6600;" parent="1" source="alb" target="ec2-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="route-table" value="Route Tables" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="100" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="scaling-policy" value="Target Tracking&#xa;Scaling Policy" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="650" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
