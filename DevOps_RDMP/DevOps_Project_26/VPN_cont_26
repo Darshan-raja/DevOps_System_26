@@ -38,19 +38,19 @@ How to create VPN(virtual private network) connection between AWS
         3. Key pair --> create new key pair
         4. Security group --> create new security group or select existing
         5. Network --> VPC 2 **my cloud** VPC
-        6. subnet --> subnet-1  
+        6. subnet --> subnet-1
         7. Auto scaling public ip --> disable
         8. Firewall (security groups) --> create SG (private SG)
         9. Inbound Security Group Rules -->  add secrity group rule
-              1.  type  -->  SSH - 
+              1.  type  -->  SSH -
               2.  source type --> Custom --> 172.16.0.0/16 **ON premise** VPC
-              3.  typec --> all ICMP ivp4 --> 
+              3.  typec --> all ICMP ivp4 -->
               4.  source --> 172.16.0.0/16 **ON premise** VPC
 --> VPN Connection Customer gateways
 --> steps 5 : Create a Customer gateway
         1. Customer gateway --> create customer gateway
         2. Customer gateway --> name --> my_cloud
-        3. Customer gateway --> IP address --> public instance ip address --> 204.236.177.94    
+        3. Customer gateway --> IP address --> public instance ip address --> 204.236.177.94
         4. Customer gateway --> type --> IPsec.1
         5. Customer gateway -->
 --> Create virtual private gateway
@@ -65,17 +65,15 @@ How to create VPN(virtual private network) connection between AWS
         4. Virtual private gateway --> VPGW
         5. Customer gateway ID  --> on premise ID
         6. Static IP prefixes --> 172.16.0.0/16 <--  public instance CIDR block
-   
 
 --> steps 8 : connect to public instance
-    sudo apt update && sudo apt install strongswan -y 
+    sudo apt update && sudo apt install strongswan -y
 
 --> Download configuration files
-    Vendor--> strongswan 
+    Vendor--> strongswan
     Platform --> ubtun
     Software ---> steonswan
     IKE version --> IKE version 1
-
 
 --> steps 9 : public instance configuration connect
     sudo nano /etc/ipsec.conf
@@ -93,18 +91,16 @@ sudo ipsec restart
  sudo nano /etc/ipsec.secrets
  t1 and t2
 
+  /etc/ipsec.d/aws-updown.sh
 
-  /etc/ipsec.d/aws-updown.sh 
-
-  add_route() {
+  add_route()
         IFS=',' read -ra route <<< "${TUNNEL_STATIC_ROUTE}"
         for i in "${route[@]}"; do
-            ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK} src  on premise  public_instace private_ip address 
+            ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK} src  on premise  public_instace private_ip address
 
 sudo chmod 744 /etc/ipsec.d/aws-updown.sh
-sudo su 
+sudo su
 echo 1 > /proc/sys/net/ipv4/ip_forward
-
 
 private routeable desginaiton on permises CIDR block --> 172.16.0.0/16 throught VPgate way select vpgw-id
 
