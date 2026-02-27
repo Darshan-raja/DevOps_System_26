@@ -30,4 +30,37 @@ How to create VPN(virtual private network) connection between AWS
               3.  type  --> custom UDP - port range  --> 500
               4.  source --> Anywhere
               5.  type --> Custom UDP -  port range e --> 4500
-              6.  
+--> steps 4 : Create a Instance in AWS
+            Instance 2 **Private_instance**
+        1. Launch Instance --> Amazon Linux 2 AMI (HVM), SSD Volume Type
+        2. Instance type --> t2.micro
+        3. Key pair --> create new key pair
+        4. Security group --> create new security group or select existing
+        5. Network --> VPC 2 **my cloud** VPC
+        6. subnet --> subnet-1  
+        7. Auto scaling public ip --> disable
+        8. Firewall (security groups) --> create SG (private SG)
+        9. Inbound Security Group Rules -->  add secrity group rule
+              1.  type  -->  SSH - 
+              2.  source type --> Custom --> 172.16.0.0/16 **ON premise** VPC
+              3.  typec --> all ICMP ivp4 --> 
+              4.  source --> 172.16.0.0/16 **ON premise** VPC
+--> VPN Connection Customer gateways
+--> steps 5 : Create a Customer gateway
+        1. Customer gateway --> create customer gateway
+        2. Customer gateway --> name --> my_cloud
+        3. Customer gateway --> IP address --> public instance ip address --> 204.236.177.94    
+        4. Customer gateway --> type --> IPsec.1
+        5. Customer gateway -->
+--> Create virtual private gateway
+--> steps 6 : Create a Virtual private gateway
+        1. Virtual private gateway --> name VPGW
+        2. select VPC --> action --> attact to VPC --> **my cloud** VPC --> attach
+--> Create Site-to-Site VPN  connections
+--> steps 7 : Create a Site-to-Site VPN  connections
+        1. Site-to-Site VPN connections
+        2. Name tag - optional --> My-vpn-site
+        3. Target gateway type --> Virtual private gateway
+        4. Virtual private gateway --> VPGW
+        5. Customer gateway ID  --> on premise ID
+        6. Static IP prefixes --> 172.16.0.0/16 <--  public instance CIDR block
