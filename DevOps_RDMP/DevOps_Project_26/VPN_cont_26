@@ -24,4 +24,9 @@ How to create VPN(virtual private network) connection between AWS
         6. subnet --> subnet-1
         7. Auto scaling public ip --> Enable
         8. Firewall (security groups) --> create SG (public SG)
-        
+        9. Inbound Security Group Rules -->  add secrity group rule
+              1.  type  --> Custom TCP - IPV4
+              2.  source --> Anywhere
+              3.  type  --> custom UDP - port range --> port range --> 500
+              4.  source --> Anywhere
+              5.  type --> Custom UDP -  port range --> port range --> 4500
