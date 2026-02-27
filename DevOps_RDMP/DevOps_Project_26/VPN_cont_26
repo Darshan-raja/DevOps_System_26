@@ -75,4 +75,10 @@ How to create VPN(virtual private network) connection between AWS
     Platform --> ubtun
     Software ---> steonswan
     IKE version --> IKE version 1
-    
+
+
+--> steps 9 : public instance configuration connect
+    sudo nano /etc/ipsec.conf
+    # Uncomment the next line to enable packet forwarding for IPv4
+        net.ipv4.ip_forward=1
+    to check the -->  sudo sysctl -p
