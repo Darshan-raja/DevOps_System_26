@@ -100,3 +100,14 @@ sudo ipsec restart
         IFS=',' read -ra route <<< "${TUNNEL_STATIC_ROUTE}"
         for i in "${route[@]}"; do
             ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK} src  on premise  public_instace private_ip address 
+
+sudo chmod 744 /etc/ipsec.d/aws-updown.sh
+sudo su 
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+
+private routeable desginaiton on permises CIDR block --> 172.16.0.0/16 throught VPgate way select vpgw-id
+
+privte instance  --> ping public instacce private ip address ping 10.0.131.222
+
+public instance --> ping private instance private ip address ping 172.16.0.222
