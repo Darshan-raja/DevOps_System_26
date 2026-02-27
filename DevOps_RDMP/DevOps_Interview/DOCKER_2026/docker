@@ -1,0 +1,10 @@
+Basic commands of DOcker
+
+1. docker run -it --rm ubuntu bash
+2. docker run -it --rm ubuntu:latest bash
+3. docker run -it --rm ubuntu:20.04 bash
+4. docker run -it --rm ubuntu:20.04.1 bash
+5. docker run -it --rm ubuntu:20.04.1.1 bash
+6. docker run -it --rm ubuntu:20.04.1.1.1 bash
+7. docker run -it --rm ubuntu:20.04.1.1.1.1 bash
+8. docker run -it --rm ubuntu:20.04.1.1.1.1.1 bash

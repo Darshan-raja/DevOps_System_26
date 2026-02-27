@@ -1,0 +1,27 @@
+How to create VPN(virtual private network) connection between AWS
+--> Steps 1 : Create a 2 VPC in AWS
+            VPC 1 **ON premise** VPC
+        1. VPC and more --> VPC name is ON premise VPC
+        2. IPv4 CIDR block --> 172.16.0.0/16
+        3. Number of Availability Zones (AZs) --> 1
+        4. Number of public subnets --> 1
+        5. NAT gateways ($) - updated --> none
+        6. VPC endpoints --> none
+
+--> steps 2 : Create a 2 VPC in AWS
+            VPC 2 **my cloud** VPC
+        1. VPC and more --> VPC name is AWS VPC
+        2. IPv4 CIDR block --> 10.0.0.0/16
+        3. Number of Availability Zones (AZs) --> 1
+        4. Number of private subnets --> 1
+--> steps 3 : Create a 2 Instance in AWS
+            Instance 1 **Publice_instance**
+        1. Launch Instance --> Amazon Linux 2 AMI (HVM), SSD Volume Type
+        2. Instance type --> t2.micro
+        3. Key pair --> create new key pair
+        4. Security group --> create new security group or select existing
+        5. Network --> VPC 1 **ON premise** VPC
+        6. subnet --> subnet-1
+        7. Auto scaling public ip --> Enable
+        8. Firewall (security groups) --> create SG (public SG)
+        
