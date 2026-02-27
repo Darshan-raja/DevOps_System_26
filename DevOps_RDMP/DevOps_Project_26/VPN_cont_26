@@ -82,3 +82,21 @@ How to create VPN(virtual private network) connection between AWS
     # Uncomment the next line to enable packet forwarding for IPv4
         net.ipv4.ip_forward=1
     to check the -->  sudo sysctl -p
+   --> tunnel 1
+leftupdown="/etc/ipsec.d/aws-updown.sh -ln Tunnel1 -ll 169.254.186.254/30 -lr 169.254.186.253/30 -m 100 -r  " enfer th e my clod CIDR number "
+--> tunnel 2
+leftupdown="/etc/ipsec.d/aws-updown.sh -ln Tunnel2 -ll 169.254.54.210/30 -lr 169.254.54.209/30 -m 200 -r 10.0.0.0/16"
+
+re start
+sudo ipsec restart
+
+ sudo nano /etc/ipsec.secrets
+ t1 and t2
+
+
+  /etc/ipsec.d/aws-updown.sh 
+
+  add_route() {
+        IFS=',' read -ra route <<< "${TUNNEL_STATIC_ROUTE}"
+        for i in "${route[@]}"; do
+            ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK} src  on premise  public_instace private_ip address 
