@@ -107,3 +107,13 @@ private routeable desginaiton on permises CIDR block --> 172.16.0.0/16 throught 
 privte instance  --> ping public instacce private ip address ping 10.0.131.222
 
 public instance --> ping private instance private ip address ping 172.16.0.222
+
+
+how to delete VPN connection
+--> 1. delete instance all 
+--> 3. delete virtual private gateway'
+--> 4. delete site-to-site vpn connection
+2. delete customer gateway
+
+--> 5. delete vpc '
+subnet
