@@ -47,7 +47,11 @@ const loveNotes = [
     "I like you.", "Stay.", "You matter.", "Text me.",
     "Always you.", "Soft heart.", "Mine?", "Call me?",
     "You glow.", "Don’t overthink.", "Forever maybe.",
-    "Still choosing you.", "You feel safe.", "My person."
+    "Still choosing you.", "You feel safe.", "My person.", "My 1person.",
+    "You're my favorite hello.", "Together is my favorite place.",
+    "You stole my heart.", "Love you to the moon.", "My heart beats for you.",
+    "You are my sunshine.", "Forever starts with you.", "Dream of you always.",
+    "My soul found yours.", "Love hits different with you.", "my basti"
 ];
 
 const scene = new THREE.Scene();
@@ -197,6 +201,38 @@ for(let i=0; i<25; i++) {
     h.scale.setScalar(2);
     h.userData = { offset: Math.random()*100 };
     heartGroup.add(h);
+}
+
+// 10 Blue Hearts with different shades
+const blueColors = [
+    0x00BFFF,  // Deep Sky Blue
+    0x1E90FF,  // Dodger Blue
+    0x4169E1,  // Royal Blue
+    0x00CED1,  // Dark Turquoise
+    0x5F9EA0,  // Cadet Blue
+    0x87CEEB,  // Sky Blue
+    0x6495ED,  // Cornflower Blue
+    0x00FFFF,  // Cyan
+    0x7B68EE,  // Medium Slate Blue
+    0x40E0D0   // Turquoise
+];
+
+for(let i=0; i<10; i++) {
+    const blueHeartMat = new THREE.SpriteMaterial({
+        map: heartTexture,
+        color: blueColors[i],
+        transparent: true,
+        blending: THREE.AdditiveBlending
+    });
+    const blueHeart = new THREE.Sprite(blueHeartMat);
+    blueHeart.position.set(
+        (Math.random()-0.5)*40,
+        (Math.random()-0.5)*40,
+        (Math.random()-0.5)*25
+    );
+    blueHeart.scale.setScalar(2.5 + Math.random());
+    blueHeart.userData = { offset: Math.random()*100, isBlue: true };
+    heartGroup.add(blueHeart);
 }
 
 const cursorParticles = [];
